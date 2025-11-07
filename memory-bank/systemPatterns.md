@@ -5,8 +5,8 @@
 ### High-Level Structure
 ```
 Next.js Application (Vercel)
-├── Landing Pages (Therapist + Homepage complete, 3 more post-launch)
-├── Checkout (spiffy.co embedded - pending)
+├── Landing Pages (All 4 professions complete: Therapist, Attorney, Engineer, Physician)
+├── Checkout (page created, spiffy.co embed pending)
 ├── Admin/Dashboard (future)
 └── API Routes (webhooks - pending)
 ```
@@ -80,13 +80,20 @@ app/
 ├── page.tsx (homepage)
 ├── therapist/
 │   └── page.tsx (therapist landing page)
+├── attorney/
+│   └── page.tsx (attorney landing page)
+├── engineer/
+│   └── page.tsx (engineer landing page)
+├── physician/
+│   └── page.tsx (physician landing page)
 ├── privacy/
 │   └── page.tsx (privacy policy)
 ├── terms/
 │   └── page.tsx (terms of service)
-├── sitemap.ts (sitemap generation)
-└── checkout/ (pending)
-    └── page.tsx
+├── checkout/
+│   ├── page.tsx (checkout page)
+│   └── CheckoutContent.tsx (client component)
+└── sitemap.ts (sitemap generation)
 ```
 
 ### Data Flow

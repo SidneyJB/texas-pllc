@@ -1,9 +1,9 @@
 # Active Context
 
 ## Current Work Focus
-**MVP Landing Pages & Analytics Complete - Ready for Checkout Integration**
+**All Profession Landing Pages Complete - Checkout Page Ready for Integration**
 
-Major milestone achieved! Landing page infrastructure, SEO, analytics, and legal pages are complete. The site is ready for checkout integration and deployment.
+Major milestone achieved! All profession landing pages (Therapist, Attorney, Engineer, Physician) are complete with profession-specific content. Checkout page created with spiffy.co placeholder. Branding finalized. Ready for spiffy.co integration and deployment.
 
 ## Recent Changes
 
@@ -34,10 +34,14 @@ Major milestone achieved! Landing page infrastructure, SEO, analytics, and legal
 
 ### Landing Pages (TICKET-005, TICKET-016 - Complete)
 - ✅ Therapist landing page at `/therapist` with all 10 sections
+- ✅ Attorney landing page at `/attorney` with all 10 sections
+- ✅ Engineer landing page at `/engineer` with all 10 sections
+- ✅ Physician landing page at `/physician` with all 10 sections
 - ✅ Homepage at `/` with profession cards and service overview
 - ✅ Profession-specific content following 5th-7th grade reading level
 - ✅ Benefit-led copy with "you" focus
 - ✅ All CTAs properly linked to checkout
+- ✅ Pricing tiers: Complete ($749) and Premium ($949) only
 
 ### Legal Pages (TICKET-008, TICKET-009 - Complete)
 - ✅ Privacy Policy at `/privacy` (PII handling, EIN data protection, cookies, user rights)
@@ -58,6 +62,17 @@ Major milestone achieved! Landing page infrastructure, SEO, analytics, and legal
 - ✅ Analytics utility (`lib/analytics.ts`) with page view, checkout start, purchase tracking
 - ✅ Event tracking integrated via CTALink component
 - ✅ Minimal client components (only CTALink, Analytics, FAQ)
+
+### Checkout & Branding (TICKET-006 - In Progress)
+- ✅ Checkout page created at `/checkout` with profession parameter support
+- ✅ Spiffy.co embed placeholder ready for integration
+- ✅ Order summary sidebar with pricing and trust signals
+- ✅ Branding finalized: "Texas PLLC Formation" as service name, "Incaroo" as business entity
+- ✅ Footer updated to show Incaroo as umbrella company
+- ✅ All metadata and schema markup updated with correct branding
+- ✅ Refund policy updated: Satisfaction guarantee only (refunds if we make an error)
+- ✅ Pricing tiers updated: Removed Basic tier, only Complete ($749) and Premium ($949)
+- ✅ PricingTable component updated to center 2 tiers responsively
 
 ## Next Steps
 
@@ -89,7 +104,6 @@ Major milestone achieved! Landing page infrastructure, SEO, analytics, and legal
    - Performance acceptable
 
 ### Post-Launch Enhancements
-- Additional profession landing pages (Physician, Engineer, Attorney)
 - Enhanced analytics and reporting
 - Operations dashboard
 - Email automation system
@@ -114,10 +128,12 @@ Major milestone achieved! Landing page infrastructure, SEO, analytics, and legal
 - ✅ **Minimal client components** - Only CTALink, Analytics, FAQ are client components
 
 ### Content Strategy
-- 4 profession-specific landing pages required
-- 10-section blueprint per page
+- ✅ 4 profession-specific landing pages complete (Therapist, Attorney, Engineer, Physician)
+- ✅ 10-section blueprint per page
 - Copy style: 5th-7th grade reading level, benefit-led
 - Focus on trust signals (guarantees, testimonials)
+- Pricing: Only Complete ($749) and Premium ($949) tiers offered
+- Refund policy: Satisfaction guarantee (refunds only if we make an error)
 
 ## Important Patterns & Preferences
 
