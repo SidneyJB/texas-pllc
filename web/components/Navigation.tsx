@@ -46,7 +46,7 @@ export default function Navigation() {
               </Link>
               <Link
                 href="/checkout"
-                className="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700"
+                className="bg-[#f88b00] text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-[#d97706]"
               >
                 Get Started
               </Link>
@@ -57,7 +57,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-[#f88b00]"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
@@ -133,7 +133,7 @@ export default function Navigation() {
             </Link>
             <Link
               href="/checkout"
-              className="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-blue-700"
+              className="bg-[#f88b00] text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-[#d97706]"
               onClick={() => setIsOpen(false)}
             >
               Get Started

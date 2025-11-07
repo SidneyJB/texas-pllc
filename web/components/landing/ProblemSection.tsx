@@ -14,16 +14,16 @@ export default function ProblemSection({
   problems,
   headline,
 }: ProblemSectionProps) {
-  const defaultHeadline = `The Challenges ${profession}s Face When Forming a PLLC`;
+  const defaultHeadline = `Why Most ${profession}s Struggle with PLLC Formation`;
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
+    <section className="bg-gray-50 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             {headline || defaultHeadline}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             Forming a PLLC shouldn't be complicated, but many {profession.toLowerCase()}s face these common frustrations:
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function ProblemSection({
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+              className="bg-white p-8 rounded-lg shadow-sm border border-gray-200"
             >
               <div className="flex items-start gap-4">
                 <div className="flex-shrink-0">
@@ -56,7 +56,7 @@ export default function ProblemSection({
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {problem.title}
                   </h3>
-                  <p className="text-gray-600">{problem.description}</p>
+                  <p className="text-gray-700 leading-relaxed">{problem.description}</p>
                 </div>
               </div>
             </div>

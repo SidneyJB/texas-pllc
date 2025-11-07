@@ -255,7 +255,7 @@ export default function PrivacyPolicyPage() {
               To exercise these rights, please contact us at{' '}
               <a
                 href="mailto:privacy@texaspllc.com"
-                className="text-blue-600 hover:underline"
+                className="text-[#f88b00] hover:underline"
               >
                 privacy@texaspllc.com
               </a>
@@ -321,7 +321,7 @@ export default function PrivacyPolicyPage() {
                 <strong>Email:</strong>{' '}
                 <a
                   href="mailto:privacy@texaspllc.com"
-                  className="text-blue-600 hover:underline"
+                  className="text-[#f88b00] hover:underline"
                 >
                   privacy@texaspllc.com
                 </a>

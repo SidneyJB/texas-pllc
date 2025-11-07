@@ -65,7 +65,7 @@ export default function TermsOfServicePage() {
             <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
               <li>Filing Form 206 with the Texas Secretary of State</li>
               <li>Obtaining an EIN (Employer Identification Number) from the IRS</li>
-              <li>Preparing profession-specific Operating Agreement</li>
+              <li>Preparing Operating Agreement</li>
               <li>Providing first-year Registered Agent service (if included)</li>
               <li>Delivering banking packet and compliance checklist</li>
             </ul>
@@ -150,7 +150,7 @@ export default function TermsOfServicePage() {
               To request a refund due to our error, please contact us at{' '}
               <a
                 href="mailto:support@texaspllc.com"
-                className="text-blue-600 hover:underline"
+                className="text-[#f88b00] hover:underline"
               >
                 support@texaspllc.com
               </a>
@@ -207,7 +207,7 @@ export default function TermsOfServicePage() {
             <ul className="list-disc pl-6 mb-4 text-gray-700 space-y-2">
               <li>Texas Secretary of State filing fee ($300)</li>
               <li>EIN issuance</li>
-              <li>Profession-specific Operating Agreement</li>
+              <li>Operating Agreement</li>
               <li>First-year Registered Agent service</li>
               <li>Banking packet and compliance checklist</li>
             </ul>
@@ -413,7 +413,7 @@ export default function TermsOfServicePage() {
                 <strong>Email:</strong>{' '}
                 <a
                   href="mailto:support@texaspllc.com"
-                  className="text-blue-600 hover:underline"
+                  className="text-[#f88b00] hover:underline"
                 >
                   support@texaspllc.com
                 </a>

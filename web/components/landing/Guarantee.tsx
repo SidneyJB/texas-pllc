@@ -17,13 +17,13 @@ export default function Guarantee({
     'We stand behind our service with these guarantees:';
 
   return (
-    <section className="bg-blue-600 py-16 sm:py-24">
+    <section className="bg-[#f88b00] py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             {headline}
           </h2>
-          <p className="text-lg text-blue-100 max-w-2xl mx-auto">
+          <p className="text-lg text-orange-50 max-w-2xl mx-auto">
             {description || defaultDescription}
           </p>
         </div>
@@ -58,7 +58,7 @@ export default function Guarantee({
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">
                     {guarantee.title}
                   </h3>
-                  <p className="text-gray-600">{guarantee.description}</p>
+                  <p className="text-gray-700 leading-relaxed">{guarantee.description}</p>
                 </div>
               </div>
             </div>

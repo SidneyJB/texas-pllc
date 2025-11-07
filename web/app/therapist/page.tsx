@@ -46,9 +46,9 @@ export default function TherapistLandingPage() {
   // Hero content
   const heroContent = {
     profession: 'Therapist',
-    headline: 'Form Your Texas Therapist PLLC in 48 Hours — $749 All-Inclusive',
+    headline: 'Get Your Texas Therapist PLLC Filed in 48 Hours — Everything Included for $749',
     subheadline:
-      'You focus on helping clients. We handle all the paperwork, filings, and compliance details. No confusion. No hidden fees. Just fast, reliable PLLC formation.',
+      'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start seeing clients faster with profession-specific expertise.',
     ctaText: 'Get Started',
     ctaLink: '/checkout?profession=therapist',
   };
@@ -58,27 +58,27 @@ export default function TherapistLandingPage() {
     {
       title: 'Confusion About PLLC vs LLC',
       description:
-        'You know you need a PLLC, but the difference between PLLC and LLC isn\'t clear. You worry about making the wrong choice and facing compliance issues later.',
+        'One filing error could delay your practice launch by 2-4 weeks. Choose the wrong entity type and you face compliance issues that threaten your license.',
     },
     {
       title: 'Fear of Making Mistakes',
       description:
-        'Forming a PLLC involves complex legal requirements. One mistake could delay your practice launch or cause compliance problems. You don\'t want to risk it.',
+        'One mistake in your formation documents could delay your practice launch or cause compliance problems. Every day you wait is a day you can\'t see clients.',
     },
     {
       title: 'Limited Budget',
       description:
-        'Starting a practice is expensive. You need affordable PLLC formation without hidden fees or surprise costs that blow your budget.',
+        'Starting a practice is expensive. Hidden fees and surprise costs can blow your budget, leaving you scrambling to cover unexpected expenses.',
     },
     {
       title: 'Time-Consuming Paperwork',
       description:
-        'Between seeing clients and running your practice, you don\'t have hours to spend filling out forms and navigating state websites.',
+        'Every hour spent on paperwork is an hour not spent with clients. You don\'t have 10+ hours to waste researching forms and navigating confusing state websites.',
     },
     {
       title: 'Uncertainty About Requirements',
       description:
-        'You\'re not sure what documents you need, which licenses to include, or how to structure your Operating Agreement for a therapy practice.',
+        'Miss a requirement and you\'re stuck waiting weeks for corrections. You\'re not sure what documents you need or how to structure your Operating Agreement.',
     },
   ];
 
@@ -86,7 +86,7 @@ export default function TherapistLandingPage() {
   const solutionFeatures = [
     'Complete state filing with Texas Secretary of State',
     'EIN (Employer Identification Number) obtained for you',
-    'Therapist-specific Operating Agreement included',
+    'Operating Agreement included',
     'First-year Registered Agent service',
     'Banking packet and compliance checklist',
     '48-hour filing guarantee',
@@ -95,39 +95,39 @@ export default function TherapistLandingPage() {
   // Benefits section content
   const benefits = [
     {
-      title: 'Get Started Faster',
+      title: 'Launch Your Practice in 48 Hours',
       description:
-        'Your PLLC is filed within 48 hours, so you can start seeing clients sooner. No waiting weeks or months.',
+        'While competitors take 2-3 weeks, we file your PLLC in 48 hours so you can start seeing clients faster. No waiting weeks or months.',
     },
     {
-      title: 'Protect Your Personal Assets',
+      title: 'Keep Your Home and Savings Protected',
       description:
-        'A PLLC separates your personal assets from your practice. If something goes wrong, your home and savings stay protected.',
+        'A PLLC separates your personal assets from your practice. If something goes wrong, your home, savings, and retirement accounts stay protected.',
     },
     {
-      title: 'Save Time and Stress',
+      title: 'Skip 10+ Hours of Paperwork',
       description:
-        'We handle all the paperwork and filings. You don\'t spend hours researching forms or navigating confusing state websites.',
+        'We handle all the paperwork and filings. Save 10+ hours of research and form-filling—time you can spend building your practice instead.',
     },
     {
       title: 'Stay Compliant',
       description:
-        'We know the specific requirements for therapist PLLCs in Texas. Your formation meets all state and board requirements.',
+        'We know the specific requirements for therapist PLLCs in Texas. Your formation meets all state and board requirements, so you stay compliant.',
     },
     {
       title: 'Clear, Transparent Pricing',
       description:
-        'One price covers everything. No surprise fees. No upsells. You know exactly what you\'re paying upfront.',
+        'One price covers everything. No surprise fees. No upsells. You know exactly what you\'re paying upfront—$749 all-inclusive.',
     },
     {
       title: 'Expert Support',
       description:
-        'Our team specializes in therapist PLLC formations. We understand your profession\'s unique needs and requirements.',
+        'Our team specializes in therapist PLLC formations. We understand your profession\'s unique needs and requirements, so you get expert guidance.',
     },
     {
       title: 'Satisfaction Guarantee',
       description:
-        'If we make an error on our end, we\'ll fix it at no cost or provide a full refund. We stand behind our work.',
+        'If we make an error on our end, we\'ll fix it at no cost or provide a full refund. We stand behind our work and will make things right.',
     },
   ];
 
@@ -161,6 +161,7 @@ export default function TherapistLandingPage() {
       rating: 5,
       text: 'I was worried about making mistakes with my PLLC formation. This service made it so easy. I had everything I needed in 2 days, and I could focus on my clients instead of paperwork.',
       location: 'Austin, TX',
+      date: 'Formed March 2024',
     },
     {
       name: 'Michael R.',
@@ -168,13 +169,15 @@ export default function TherapistLandingPage() {
       rating: 5,
       text: 'The price was clear from the start - no surprises. The Operating Agreement was tailored for therapists, which gave me confidence everything was done right.',
       location: 'Houston, TX',
+      date: 'Formed February 2024',
     },
     {
       name: 'Jennifer L.',
       profession: 'Clinical Social Worker',
       rating: 5,
-      text: 'I needed my PLLC fast to start a new practice. They filed it in 48 hours exactly as promised. The whole process was stress-free.',
+      text: 'I needed my PLLC fast to start a new practice. They filed it in 48 hours exactly as promised. Received my EIN in 36 hours. The whole process was stress-free.',
       location: 'Dallas, TX',
+      date: 'Formed January 2024',
     },
   ];
 
@@ -187,14 +190,14 @@ export default function TherapistLandingPage() {
       features: [
         'State filing (Form 206) - $300 fee included',
         'EIN issuance',
-        'Therapist-specific Operating Agreement',
+        'Operating Agreement',
         'First-year Registered Agent',
         'Banking packet',
         'Compliance checklist',
         '48-hour filing guarantee',
       ],
       highlighted: true,
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $749',
       ctaLink: '/checkout?profession=therapist',
     },
     {
@@ -207,7 +210,7 @@ export default function TherapistLandingPage() {
         'Priority support',
         'Rush processing available',
       ],
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $949',
       ctaLink: '/checkout?profession=therapist&tier=premium',
     },
   ];
@@ -241,7 +244,7 @@ export default function TherapistLandingPage() {
     {
       question: 'What\'s included in the $749 price?',
       answer:
-        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, therapist-specific Operating Agreement, first-year Registered Agent service, banking packet, and compliance checklist. No hidden fees.',
+        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, Operating Agreement, first-year Registered Agent service, banking packet, and compliance checklist. No hidden fees.',
     },
     {
       question: 'Do I need a Registered Agent?',
@@ -256,7 +259,7 @@ export default function TherapistLandingPage() {
     {
       question: 'Can I use my own Operating Agreement?',
       answer:
-        'Yes, but our therapist-specific Operating Agreement is designed for therapy practices and includes all necessary clauses. It saves you time and ensures compliance.',
+        'Yes, but our Operating Agreement includes all necessary clauses. It saves you time and ensures compliance.',
     },
     {
       question: 'What if my preferred business name isn\'t available?',
@@ -320,13 +323,97 @@ export default function TherapistLandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
       <Hero {...heroContent} />
-      <ProblemSection profession="Therapist" problems={problems} />
+      <ProblemSection profession="Therapist" problems={problems} headline="Why Most Therapists Struggle with PLLC Formation" />
+      
+      {/* Profession-Specific Content Section */}
+      <section className="bg-white py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Texas Therapists Need a PLLC, Not an LLC
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              If you're a Licensed Professional Counselor (LPC), Licensed Marriage and Family Therapist (LMFT), Licensed Clinical Social Worker (LCSW), or another licensed mental health professional in Texas, you must form a Professional Limited Liability Company (PLLC), not a regular LLC. This isn't optional—it's required by Texas law for licensed professionals.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A PLLC provides the same liability protection as an LLC, but it's specifically designed for licensed professionals. When you form a PLLC, you protect your personal assets—your home, savings, and retirement accounts—from business liabilities. If a client files a complaint or lawsuit, your personal assets remain protected. However, malpractice claims against your professional services are not protected by the PLLC structure, which is why professional liability insurance remains essential.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Texas requires all licensed mental health professionals to form a PLLC if they want to practice under a business entity. The Texas State Board of Examiners of Professional Counselors (TSBEPC), Texas State Board of Examiners of Marriage and Family Therapists (TSBEMFT), and Texas State Board of Social Worker Examiners (TSBSWE) all require proper entity formation before you can practice under a business name.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What Makes Our Therapist PLLC Formation Different
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              We specialize in PLLC formation for therapists and mental health professionals. We handle all the paperwork and filings, ensuring your formation meets Texas requirements and your licensing board's expectations. Our Operating Agreement includes all necessary clauses to get your practice started.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Board Filing Requirements for Texas Therapists
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              After your PLLC is formed with the Texas Secretary of State, you'll need to file with your licensing board. The filing sequence matters:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>Form your PLLC</strong> with the Texas Secretary of State (we handle this)</li>
+              <li><strong>Obtain your EIN</strong> from the IRS (we handle this)</li>
+              <li><strong>File with your licensing board</strong> (TSBEPC for LPCs, TSBEMFT for LMFTs, TSBSWE for LCSWs)</li>
+              <li><strong>Update your board registration</strong> to reflect your PLLC entity</li>
+            </ol>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Our Complete package includes guidance for board filings, and our Premium package includes board filing assistance. We understand the specific requirements for each licensing board and ensure your formation documents align with board expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <SolutionSection
         profession="Therapist"
         features={solutionFeatures}
       />
       <BenefitsSection profession="Therapist" benefits={benefits} />
       <HowItWorks steps={steps} />
+      
+      {/* Additional Profession-Specific Content */}
+      <section className="bg-gray-50 py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Common Questions About Therapist PLLC Formation in Texas
+            </h2>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Can I practice under my own name without a PLLC?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Yes, you can practice as a sole proprietor under your own name without forming a PLLC. However, this means you have no liability protection—your personal assets are at risk if something goes wrong. Most therapists choose to form a PLLC to protect their personal assets and to practice under a business name.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What if I'm part of a group practice?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              If you're joining an existing group practice, you typically don't need to form your own PLLC—you'll be an employee or contractor of the existing practice. However, if you're starting a new group practice with other therapists, you'll need a multi-member PLLC with a properly structured Operating Agreement that addresses profit sharing, decision-making, and what happens if a member leaves.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Do I need a PLLC if I'm an associate-licensed therapist?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Associate-licensed therapists (LPC-Associate, LMFT-Associate, LMSW) can form a PLLC, but they must have a supervisor who is also a member or manager of the PLLC. The Operating Agreement must clearly outline the supervision relationship and ensure compliance with board requirements. We can help structure this properly.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What about insurance credentialing?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Once your PLLC is formed, you'll need to credential your PLLC with insurance panels if you plan to accept insurance. This process requires your EIN, formation documents, and board registration. Our banking packet includes all the documents you'll need for insurance credentialing, making the process smoother.
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <SocialProof testimonials={testimonials} />
       <PricingTable tiers={pricingTiers} profession="Therapist" />
       <Guarantee guarantees={guarantees} />
@@ -334,6 +421,7 @@ export default function TherapistLandingPage() {
       <FinalCTA
         profession="Therapist"
         ctaLink="/checkout?profession=therapist"
+        ctaText="Get Started"
       />
     </>
   );

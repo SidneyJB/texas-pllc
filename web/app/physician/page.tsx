@@ -47,9 +47,9 @@ export default function PhysicianLandingPage() {
   // Hero content
   const heroContent = {
     profession: 'Physician',
-    headline: 'Form Your Texas Physician PLLC in 48 Hours — $749 All-Inclusive',
+    headline: 'Get Your Texas Physician PLLC Filed in 48 Hours — Everything Included for $749',
     subheadline:
-      'You focus on patient care. We handle all the paperwork, filings, and compliance details. No confusion. No hidden fees. Just fast, reliable PLLC formation.',
+      'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start seeing patients faster with physician-specific expertise.',
     ctaText: 'Get Started',
     ctaLink: '/checkout?profession=physician',
   };
@@ -87,7 +87,7 @@ export default function PhysicianLandingPage() {
   const solutionFeatures = [
     'Complete state filing with Texas Secretary of State',
     'EIN (Employer Identification Number) obtained for you',
-    'Physician-specific Operating Agreement included',
+    'Operating Agreement included',
     'First-year Registered Agent service',
     'Banking packet and compliance checklist',
     'TMB filing guidance included',
@@ -190,7 +190,7 @@ export default function PhysicianLandingPage() {
       features: [
         'State filing (Form 206) - $300 fee included',
         'EIN issuance',
-        'Physician-specific Operating Agreement',
+        'Operating Agreement',
         'First-year Registered Agent',
         'Banking packet',
         'TMB filing guidance',
@@ -198,7 +198,7 @@ export default function PhysicianLandingPage() {
         '48-hour filing guarantee',
       ],
       highlighted: true,
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $749',
       ctaLink: '/checkout?profession=physician',
     },
     {
@@ -212,7 +212,7 @@ export default function PhysicianLandingPage() {
         'Priority support',
         'Rush processing available',
       ],
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $949',
       ctaLink: '/checkout?profession=physician&tier=premium',
     },
   ];
@@ -246,7 +246,7 @@ export default function PhysicianLandingPage() {
     {
       question: 'What\'s included in the $749 price?',
       answer:
-        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, physician-specific Operating Agreement, first-year Registered Agent service, banking packet, TMB filing guidance, and compliance checklist. No hidden fees.',
+        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, Operating Agreement, first-year Registered Agent service, banking packet, TMB filing guidance, and compliance checklist. No hidden fees.',
     },
     {
       question: 'Do I need a Registered Agent?',
@@ -266,12 +266,12 @@ export default function PhysicianLandingPage() {
     {
       question: 'Can I form a PLLC with other physicians or PAs?',
       answer:
-        'Yes, we support multi-owner PLLCs. Our physician-specific Operating Agreement can accommodate multiple owners and includes proper ownership structure.',
+        'Yes, we support multi-owner PLLCs. Our Operating Agreement can accommodate multiple owners and includes proper ownership structure.',
     },
     {
       question: 'Can I use my own Operating Agreement?',
       answer:
-        'Yes, but our physician-specific Operating Agreement is designed for medical practices and includes all necessary clauses. It saves you time and ensures compliance.',
+        'Yes, but our Operating Agreement includes all necessary clauses. It saves you time and ensures compliance.',
     },
     {
       question: 'What if my preferred business name isn\'t available?',
@@ -325,10 +325,102 @@ export default function PhysicianLandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
       <Hero {...heroContent} />
-      <ProblemSection profession="Physician" problems={problems} />
+      <ProblemSection profession="Physician" problems={problems} headline="Why Most Physicians Struggle with PLLC Formation" />
+      
+      {/* Profession-Specific Content Section */}
+      <section className="bg-white py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Texas Physicians Need a PLLC for Medical Practice
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              If you're a licensed physician, physician assistant, or medical doctor in Texas, forming a Professional Limited Liability Company (PLLC) is essential for protecting your personal assets while practicing medicine. Texas law requires licensed medical professionals to form a PLLC, not a regular LLC, when operating a medical practice under a business entity.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A PLLC provides crucial liability protection for your medical practice. While it doesn't protect you from malpractice claims (you still need professional liability insurance), it does protect your personal assets—your home, savings, retirement accounts, and other personal property—from business debts, lawsuits unrelated to malpractice, and other practice liabilities. This separation is critical for physicians who may face employment disputes, contract issues, or other business-related legal matters.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              The Texas Medical Board (TMB) requires physicians to properly register their PLLC before practicing under a business name. The filing sequence is critical: you must form your PLLC with the Texas Secretary of State first, then file with TMB. Getting this order wrong can delay your practice launch by weeks or even months, costing you potential patients and revenue.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What Makes Our Physician PLLC Formation Different
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              We specialize in PLLC formation for physicians and medical practices. We handle all the paperwork and filings, ensuring your formation meets Texas requirements and TMB expectations. Our Operating Agreement includes all necessary clauses to get your practice started.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              TMB Board Filing Requirements for Texas Physicians
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              After your PLLC is formed with the Texas Secretary of State, you must file with the Texas Medical Board. The correct sequence is:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>Form your PLLC</strong> with the Texas Secretary of State (we handle this)</li>
+              <li><strong>Obtain your EIN</strong> from the IRS (we handle this)</li>
+              <li><strong>File Form 1305</strong> with TMB to register your PLLC</li>
+              <li><strong>Update your TMB registration</strong> to reflect your PLLC entity</li>
+              <li><strong>Credential with insurance panels</strong> using your PLLC information</li>
+            </ol>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Our Complete package includes TMB filing guidance, and our Premium package includes TMB board filing assistance. We understand TMB requirements and ensure your formation documents meet all medical practice standards.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Multi-Physician and PA Joint Practices
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              If you're forming a practice with other physicians or physician assistants, proper ownership structure is critical. Texas allows PAs to be members of a physician PLLC under specific conditions. Our Operating Agreement can accommodate multi-member practices and includes proper ownership percentages, decision-making processes, and buy-sell provisions. We ensure compliance with TMB rules regarding PA ownership and supervision requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <SolutionSection profession="Physician" features={solutionFeatures} />
       <BenefitsSection profession="Physician" benefits={benefits} />
       <HowItWorks steps={steps} />
+      
+      {/* Additional Profession-Specific Content */}
+      <section className="bg-gray-50 py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Common Questions About Physician PLLC Formation in Texas
+            </h2>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Can I practice medicine without forming a PLLC?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Yes, you can practice as a sole proprietor under your own name without forming a PLLC. However, this provides no liability protection for your personal assets. Most physicians form a PLLC to protect personal assets and to practice under a business name. Additionally, many insurance panels and hospitals require you to practice under a business entity for credentialing purposes.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What about insurance credentialing and billing?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Once your PLLC is formed, you'll need to credential your PLLC with insurance panels (Medicare, Medicaid, and private insurers) and set up billing under your PLLC's EIN. This process requires your formation documents, EIN letter, and TMB registration. Our banking packet includes all documents needed for insurance credentialing, making the process faster. Many physicians find that having their PLLC formed correctly upfront prevents delays in getting credentialed and seeing patients.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Can physician assistants be owners of a physician PLLC?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Yes, under Texas law, physician assistants can be members of a physician PLLC, but there are specific requirements. The PLLC must have at least one physician member, and the Operating Agreement must comply with TMB rules regarding PA supervision and ownership. We can help structure your PLLC to accommodate PA ownership while ensuring compliance with all TMB requirements.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What happens if I need to add or remove physicians later?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Your Operating Agreement should include provisions for adding or removing members. We can help with amendments to your PLLC if you need to make changes after formation. It's important to have a properly structured Operating Agreement from the start that addresses member changes, buy-sell provisions, and practice transitions.
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <SocialProof testimonials={testimonials} />
       <PricingTable tiers={pricingTiers} profession="Physician" />
       <Guarantee guarantees={guarantees} />

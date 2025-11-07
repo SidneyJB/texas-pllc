@@ -4,6 +4,7 @@ export interface Testimonial {
   rating: number;
   text: string;
   location?: string;
+  date?: string;
 }
 
 export interface SocialProofProps {
@@ -20,7 +21,7 @@ export default function SocialProof({
   totalReviews = 127,
 }: SocialProofProps) {
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
+    <section className="bg-gray-50 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -43,7 +44,7 @@ export default function SocialProof({
               {averageRating} out of 5
             </span>
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-700">
             Based on {totalReviews}+ verified reviews
           </p>
         </div>
@@ -52,7 +53,7 @@ export default function SocialProof({
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+              className="bg-white p-8 rounded-lg shadow-sm border border-gray-200"
             >
               {/* Rating */}
               <div className="flex items-center gap-1 mb-4">
@@ -77,6 +78,7 @@ export default function SocialProof({
                 <p className="text-sm text-gray-600">
                   {testimonial.profession}
                   {testimonial.location && ` • ${testimonial.location}`}
+                  {testimonial.date && ` • ${testimonial.date}`}
                 </p>
               </div>
             </div>

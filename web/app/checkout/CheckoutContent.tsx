@@ -34,7 +34,7 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
         <div className="mb-8">
           <Link
             href="/"
-            className="text-blue-600 hover:text-blue-700 text-sm font-medium mb-4 inline-block"
+            className="text-[#f88b00] hover:text-[#d97706] text-sm font-medium mb-4 inline-block"
           >
             ← Back to Home
           </Link>
@@ -120,7 +120,7 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
                   </div>
                   <div className="flex flex-col items-center">
                     <svg
-                      className="w-8 h-8 text-blue-600 mb-2"
+                      className="w-8 h-8 text-[#f88b00] mb-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -230,10 +230,10 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
               </div>
 
               {/* Guarantee Badge */}
-              <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+              <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
                 <div className="flex items-start">
                   <svg
-                    className="w-5 h-5 text-blue-600 mt-0.5 mr-2 flex-shrink-0"
+                    className="w-5 h-5 text-[#f88b00] mt-0.5 mr-2 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -246,10 +246,10 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
                     />
                   </svg>
                   <div>
-                    <p className="text-sm font-medium text-blue-900">
+                    <p className="text-sm font-medium text-orange-900">
                       48-Hour Filing Guarantee
                     </p>
-                    <p className="text-xs text-blue-700 mt-1">
+                    <p className="text-xs text-orange-700 mt-1">
                       We'll file your PLLC within 48 business hours or you'll
                       receive a $100 credit.
                     </p>
@@ -263,7 +263,7 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
                   Questions?{' '}
                   <Link
                     href="mailto:support@texaspllc.com"
-                    className="text-blue-600 hover:text-blue-700"
+                    className="text-[#f88b00] hover:text-[#d97706]"
                   >
                     Contact Support
                   </Link>

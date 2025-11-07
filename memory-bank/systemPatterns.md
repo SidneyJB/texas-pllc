@@ -37,8 +37,11 @@ Next.js Application (Vercel)
 ### Landing Page Pattern
 - **10-section blueprint** - Consistent structure across profession pages
 - **Profession-specific content** - Dynamic content based on profession type
+- **Text-rich SEO content** - Extensive written content (1,500+ words) explaining legal requirements, board filings, and profession-specific considerations
+- **Content sections** - "Why [Profession] Needs a PLLC" and "Common Questions" sections added for SEO
 - **Shared components** - Reusable sections (Hero, Pricing, FAQ, etc.)
 - **Server components** - All landing components are server components except FAQ
+- **Operating Agreement** - Referenced as basic template (not profession-specific)
 
 ### Analytics Pattern
 - **Centralized utilities** - `lib/analytics.ts` contains all tracking functions

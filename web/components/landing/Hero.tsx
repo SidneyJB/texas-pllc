@@ -69,7 +69,7 @@ export default function Hero({
           </h1>
 
           {/* Subheadline */}
-          <p className="text-xl sm:text-2xl text-gray-600 max-w-3xl mx-auto mb-10">
+          <p className="text-lg sm:text-xl text-gray-700 max-w-3xl mx-auto mb-10 leading-relaxed">
             {subheadline}
           </p>
 
@@ -77,7 +77,7 @@ export default function Hero({
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTALink
               href={ctaLink}
-              className="bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+              className="bg-[#f88b00] text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-[#d97706] transition-colors inline-block"
               profession={profession}
               price={749}
               ctaText={ctaText}
@@ -88,7 +88,7 @@ export default function Hero({
             </CTALink>
             <Link
               href={`#how-it-works`}
-              className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-50 transition-colors inline-block"
+              className="bg-white text-[#f88b00] border-2 border-[#f88b00] px-8 py-4 rounded-md text-lg font-medium hover:bg-orange-50 transition-colors inline-block"
             >
               Learn More
             </Link>

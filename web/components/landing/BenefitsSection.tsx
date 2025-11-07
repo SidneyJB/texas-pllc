@@ -18,7 +18,7 @@ export default function BenefitsSection({
   const defaultHeadline = `Why ${profession}s Choose Us`;
 
   return (
-    <section className="bg-gray-50 py-16 sm:py-24">
+    <section className="bg-gray-50 py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -33,9 +33,9 @@ export default function BenefitsSection({
               className="bg-white p-8 rounded-lg shadow-sm border border-gray-200 text-center"
             >
               {benefit.icon || (
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#f88b00]"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -52,7 +52,7 @@ export default function BenefitsSection({
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-gray-600">{benefit.description}</p>
+              <p className="text-gray-700 leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>

@@ -180,20 +180,20 @@ export default function HomePage() {
       {/* Hero Section */}
       <Hero
         profession="Professional"
-        headline="Form Your Texas PLLC in 48 Hours — $749 All-Inclusive"
-        subheadline="Transparent pricing. Profession-specific expertise. No hidden fees. We handle everything so you can focus on your practice."
+        headline="Get Your Texas PLLC Filed in 48 Hours — Everything Included for $749"
+        subheadline="State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start your practice faster with profession-specific expertise."
         ctaText="Get Started"
         ctaLink="/therapist"
       />
 
       {/* Service Overview */}
-      <section className="bg-gray-50 py-16 sm:py-24">
+      <section className="bg-gray-50 py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
               Everything You Need, All-Inclusive
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
               One price covers everything. No surprises. No upsells.
             </p>
           </div>
@@ -210,7 +210,7 @@ export default function HomePage() {
               },
               {
                 title: 'Operating Agreement',
-                description: 'Profession-specific Operating Agreement tailored to your needs',
+                description: 'Operating Agreement tailored to your needs',
               },
               {
                 title: 'Registered Agent',
@@ -227,20 +227,184 @@ export default function HomePage() {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-sm border border-gray-200"
+                className="bg-white p-8 rounded-lg shadow-sm border border-gray-200"
               >
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p className="text-gray-700 leading-relaxed">{item.description}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* How It Works Process Section */}
+      <section className="bg-white py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              How It Works
+            </h2>
+            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+              Get your PLLC formed in three simple steps. We handle all the details so you can focus on your practice.
+            </p>
+          </div>
+
+          {/* Vertical Process Flow */}
+          <div className="relative">
+            {/* Vertical Line */}
+            <div className="hidden md:block absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200">
+              <div className="absolute top-0 left-0 w-full h-1/3 bg-[#f88b00]"></div>
+            </div>
+
+            <div className="space-y-12">
+              {/* Step 1 */}
+              <div className="relative flex gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-[#f88b00] rounded-full flex items-center justify-center relative z-10 shadow-lg">
+                    <span className="text-2xl font-bold text-white">1</span>
+                  </div>
+                </div>
+                <div className="flex-1 pt-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Complete Your Order
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Tell us about your practice and provide your license information. The whole process takes about 6 minutes.
+                  </p>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="text-sm font-semibold text-gray-900 mb-2">What you'll provide:</p>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Your professional license number</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Preferred business name (we'll check availability)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Business address and contact information</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Ownership structure (single member or multi-member)</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative flex gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-[#f88b00] rounded-full flex items-center justify-center relative z-10 shadow-lg">
+                    <span className="text-2xl font-bold text-white">2</span>
+                  </div>
+                </div>
+                <div className="flex-1 pt-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    We Handle Everything
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Once your order is complete, we immediately begin processing your PLLC formation. Our team handles all the paperwork, filings, and compliance details.
+                  </p>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="text-sm font-semibold text-gray-900 mb-2">What we do:</p>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>File Form 206 with Texas Secretary of State ($300 fee included)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Obtain your EIN (Employer Identification Number) from the IRS</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Create your Operating Agreement</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Set up your first-year Registered Agent service</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Prepare your complete banking packet</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Create your compliance checklist</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-4 bg-orange-50 border border-orange-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-900">
+                      <span className="font-semibold">48-Hour Filing Guarantee:</span> We file your PLLC within 48 business hours, or you get a $100 credit automatically.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative flex gap-8">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-[#f88b00] rounded-full flex items-center justify-center relative z-10 shadow-lg">
+                    <span className="text-2xl font-bold text-white">3</span>
+                  </div>
+                </div>
+                <div className="flex-1 pt-2">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                    Receive Your Complete Packet
+                  </h3>
+                  <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+                    Within 48 hours, you'll receive your complete PLLC formation packet with everything you need to start your practice.
+                  </p>
+                  <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                    <p className="text-sm font-semibold text-gray-900 mb-2">Your packet includes:</p>
+                    <ul className="space-y-1 text-sm text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Texas Secretary of State filing confirmation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>EIN letter from the IRS</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Operating Agreement</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Registered Agent information and confirmation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Banking resolution and all documents needed to open your business bank account</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-[#f88b00] mt-1">•</span>
+                        <span>Compliance checklist with step-by-step guide</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
+                    <p className="text-sm text-gray-900">
+                      <span className="font-semibold">Next Steps:</span> Open your business bank account, complete any board filings if required, and start seeing clients!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Profession Cards */}
-      <section className="bg-white py-16 sm:py-24">
+      <section className="bg-white py-20 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -256,11 +420,11 @@ export default function HomePage() {
               <Link
                 key={profession.slug}
                 href={`/${profession.slug}`}
-                className="group bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-blue-600 hover:shadow-lg transition-all"
+                className="group bg-white border-2 border-gray-200 rounded-lg p-6 hover:border-[#f88b00] hover:shadow-lg transition-all"
               >
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-blue-600 transition-colors">
-                    <div className="text-blue-600 group-hover:text-white transition-colors">
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-4 group-hover:bg-[#f88b00] transition-colors">
+                    <div className="text-[#f88b00] group-hover:text-white transition-colors">
                       {profession.icon}
                     </div>
                   </div>
@@ -270,7 +434,7 @@ export default function HomePage() {
                   <p className="text-sm text-gray-600 mb-4">
                     {profession.description}
                   </p>
-                  <span className="text-blue-600 font-medium group-hover:text-blue-700">
+                  <span className="text-[#f88b00] font-medium group-hover:text-[#d97706]">
                     Get Started →
                   </span>
                 </div>
@@ -281,7 +445,7 @@ export default function HomePage() {
       </section>
 
       {/* Trust Signals */}
-      <section className="bg-blue-600 py-16 sm:py-24">
+      <section className="bg-[#f88b00] py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -360,7 +524,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {item.title}
                 </h3>
-                <p className="text-blue-100">{item.description}</p>
+                <p className="text-orange-50">{item.description}</p>
               </div>
             ))}
           </div>
@@ -379,7 +543,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTALink
               href="/therapist"
-              className="bg-blue-600 text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-700 transition-colors inline-block"
+              className="bg-[#f88b00] text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-[#d97706] transition-colors inline-block"
               ctaText="Get Started"
               location="homepage-final-cta"
             >
@@ -387,7 +551,7 @@ export default function HomePage() {
             </CTALink>
             <Link
               href="#pricing"
-              className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-md text-lg font-medium hover:bg-blue-50 transition-colors inline-block"
+              className="bg-white text-[#f88b00] border-2 border-[#f88b00] px-8 py-4 rounded-md text-lg font-medium hover:bg-orange-50 transition-colors inline-block"
             >
               View Pricing
             </Link>

@@ -47,9 +47,9 @@ export default function EngineerLandingPage() {
   // Hero content
   const heroContent = {
     profession: 'Engineer',
-    headline: 'Form Your Texas Engineer PLLC in 48 Hours — $749 All-Inclusive',
+    headline: 'Get Your Texas Engineer PLLC Filed in 48 Hours — Everything Included for $749',
     subheadline:
-      'You focus on engineering projects. We handle all the paperwork, filings, and compliance details. No confusion. No hidden fees. Just fast, reliable PLLC formation.',
+      'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start taking projects faster with engineer-specific expertise.',
     ctaText: 'Get Started',
     ctaLink: '/checkout?profession=engineer',
   };
@@ -87,7 +87,7 @@ export default function EngineerLandingPage() {
   const solutionFeatures = [
     'Complete state filing with Texas Secretary of State',
     'EIN (Employer Identification Number) obtained for you',
-    'Engineer-specific Operating Agreement included',
+    'Operating Agreement included',
     'First-year Registered Agent service',
     'Banking packet and compliance checklist',
     'TBPELS filing guidance included',
@@ -189,7 +189,7 @@ export default function EngineerLandingPage() {
       features: [
         'State filing (Form 206) - $300 fee included',
         'EIN issuance',
-        'Engineer-specific Operating Agreement',
+        'Operating Agreement',
         'First-year Registered Agent',
         'Banking packet',
         'TBPELS filing guidance',
@@ -197,7 +197,7 @@ export default function EngineerLandingPage() {
         '48-hour filing guarantee',
       ],
       highlighted: true,
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $749',
       ctaLink: '/checkout?profession=engineer',
     },
     {
@@ -210,7 +210,7 @@ export default function EngineerLandingPage() {
         'Priority support',
         'Rush processing available',
       ],
-      ctaText: 'Get Started',
+      ctaText: 'Start My Formation - $949',
       ctaLink: '/checkout?profession=engineer&tier=premium',
     },
   ];
@@ -244,7 +244,7 @@ export default function EngineerLandingPage() {
     {
       question: 'What\'s included in the $749 price?',
       answer:
-        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, engineer-specific Operating Agreement, first-year Registered Agent service, banking packet, TBPELS filing guidance, and compliance checklist. No hidden fees.',
+        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, Operating Agreement, first-year Registered Agent service, banking packet, TBPELS filing guidance, and compliance checklist. No hidden fees.',
     },
     {
       question: 'Do I need a Registered Agent?',
@@ -264,7 +264,7 @@ export default function EngineerLandingPage() {
     {
       question: 'Can I use my own Operating Agreement?',
       answer:
-        'Yes, but our engineer-specific Operating Agreement is designed for engineering practices and includes all necessary clauses. It saves you time and ensures compliance.',
+        'Yes, but our Operating Agreement includes all necessary clauses. It saves you time and ensures compliance.',
     },
     {
       question: 'What if my preferred business name isn\'t available?',
@@ -323,10 +323,102 @@ export default function EngineerLandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
       />
       <Hero {...heroContent} />
-      <ProblemSection profession="Engineer" problems={problems} />
+      <ProblemSection profession="Engineer" problems={problems} headline="Why Most Engineers Struggle with PLLC Formation" />
+      
+      {/* Profession-Specific Content Section */}
+      <section className="bg-white py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Why Texas Professional Engineers Need a PLLC
+            </h2>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              If you're a Professional Engineer (PE) licensed in Texas, forming a Professional Limited Liability Company (PLLC) is essential for protecting your personal assets while practicing engineering. Texas law requires licensed Professional Engineers to form a PLLC, not a regular LLC, when operating an engineering practice under a business entity. This requirement is mandated by the Texas Board of Professional Engineers and Land Surveyors (TBPELS) and is part of the Texas Engineering Practice Act.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A PLLC provides crucial liability protection for your engineering practice. While it doesn't protect you from professional liability claims related to your engineering work (you still need professional liability insurance), it does protect your personal assets—your home, savings, retirement accounts, and other personal property—from business debts, contract disputes, employment matters, and other practice liabilities unrelated to professional errors. This separation is critical for engineers who may face contract disputes, employment issues, or other business-related legal matters.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              TBPELS requires Professional Engineers to properly register their PLLC and ensure compliance with engineering practice rules. The filing sequence is critical: you must form your PLLC with the Texas Secretary of State first, then file with TBPELS. Getting this order wrong can delay your firm launch by weeks or even months, costing you potential projects and revenue. Additionally, you cannot properly stamp engineering documents until your PLLC is correctly formed and registered with TBPELS.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What Makes Our Engineer PLLC Formation Different
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              We specialize in PLLC formation for Professional Engineers and engineering firms. We handle all the paperwork and filings, ensuring your formation meets Texas requirements and TBPELS expectations. Our Operating Agreement includes all necessary clauses to get your practice started.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              TBPELS Board Filing Requirements for Texas Engineers
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-4">
+              After your PLLC is formed with the Texas Secretary of State, you must file with TBPELS. The correct sequence is:
+            </p>
+            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-6">
+              <li><strong>Form your PLLC</strong> with the Texas Secretary of State (we handle this)</li>
+              <li><strong>Obtain your EIN</strong> from the IRS (we handle this)</li>
+              <li><strong>File Form 1305</strong> with TBPELS to register your PLLC</li>
+              <li><strong>Update your TBPELS registration</strong> to reflect your PLLC entity</li>
+              <li><strong>Register your PLLC</strong> for stamping and seal purposes</li>
+            </ol>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Our Complete package includes TBPELS filing guidance, and our Premium package includes TBPELS board filing assistance. We understand TBPELS requirements and ensure your formation documents meet all engineering practice standards. You cannot properly stamp engineering documents until your PLLC is correctly formed and registered with TBPELS.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Stamping and Seal Requirements for Engineering Documents
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Texas requires Professional Engineers to stamp engineering documents with their PE seal. You cannot properly stamp documents under a business name until your PLLC is formed and registered with TBPELS. Our Operating Agreement includes provisions that address stamping requirements and ensure compliance with TBPELS rules regarding document preparation and sealing under a business entity.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <SolutionSection profession="Engineer" features={solutionFeatures} />
       <BenefitsSection profession="Engineer" benefits={benefits} />
       <HowItWorks steps={steps} />
+      
+      {/* Additional Profession-Specific Content */}
+      <section className="bg-gray-50 py-20 sm:py-24">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Common Questions About Engineer PLLC Formation in Texas
+            </h2>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Can I practice engineering without forming a PLLC?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Yes, you can practice as a sole proprietor under your own name without forming a PLLC. However, this provides no liability protection for your personal assets. Most Professional Engineers form a PLLC to protect personal assets and to practice under a firm name. Additionally, many clients and government agencies prefer working with a formal business entity, and some contracts require a business entity structure.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What about stamping engineering documents?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Texas requires Professional Engineers to stamp engineering documents with their PE seal. You cannot properly stamp documents under a business name until your PLLC is formed and registered with TBPELS. Our formation process ensures your PLLC is properly structured to support stamping requirements, and our TBPELS filing guidance helps you complete the registration process quickly so you can start stamping documents under your firm name.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              Can multiple engineers form a PLLC together?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              Yes, multiple Professional Engineers can form a multi-member PLLC. Our Operating Agreement can accommodate multiple members and includes proper ownership percentages, profit-sharing arrangements, decision-making processes, and buy-sell provisions. We ensure compliance with TBPELS rules regarding multi-engineer firms and help structure your Operating Agreement to address project ownership, intellectual property, and firm transitions.
+            </p>
+            
+            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
+              What about professional liability insurance?
+            </h3>
+            <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              A PLLC does not protect you from professional liability claims related to your engineering work. You still need professional liability insurance (errors and omissions insurance) to protect against claims of professional negligence. However, your PLLC protects your personal assets from business debts, contract disputes, and other non-professional liabilities. Our Operating Agreement includes provisions that support proper insurance coverage and risk management.
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <SocialProof testimonials={testimonials} />
       <PricingTable tiers={pricingTiers} profession="Engineer" />
       <Guarantee guarantees={guarantees} />

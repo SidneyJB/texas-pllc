@@ -22,13 +22,13 @@ export default function PricingTable({
   profession,
 }: PricingTableProps) {
   return (
-    <section id="pricing" className="bg-white py-16 sm:py-24">
+    <section id="pricing" className="bg-white py-20 sm:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             {headline}
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto">
             {profession
               ? `Everything you need to form your ${profession} PLLC. No hidden fees.`
               : 'Everything you need to form your PLLC. No hidden fees.'}
@@ -41,13 +41,13 @@ export default function PricingTable({
               key={index}
               className={`relative rounded-lg border-2 p-8 w-full md:w-[calc(50%-1rem)] lg:w-[calc(50%-3rem)] max-w-md ${
                 tier.highlighted
-                  ? 'border-blue-600 bg-blue-50 shadow-lg scale-105'
+                  ? 'border-[#f88b00] bg-orange-50 shadow-lg scale-105'
                   : 'border-gray-200 bg-white'
               }`}
             >
               {tier.highlighted && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-medium">
+                  <span className="bg-[#f88b00] text-white px-4 py-1 rounded-full text-sm font-medium">
                     Most Popular
                   </span>
                 </div>
@@ -82,7 +82,7 @@ export default function PricingTable({
                         d="M5 13l4 4L19 7"
                       />
                     </svg>
-                    <span className="text-gray-700">{feature}</span>
+                    <span className="text-gray-700 leading-relaxed">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -91,8 +91,8 @@ export default function PricingTable({
                 href={tier.ctaLink || '/checkout'}
                 className={`block w-full text-center py-3 px-6 rounded-md font-medium transition-colors ${
                   tier.highlighted
-                    ? 'bg-blue-600 text-white hover:bg-blue-700'
-                    : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
+                    ? 'bg-[#f88b00] text-white hover:bg-[#d97706]'
+                    : 'bg-[#f88b00] text-white hover:bg-[#d97706]'
                 }`}
                 profession={profession}
                 price={tier.price}
@@ -108,7 +108,7 @@ export default function PricingTable({
 
         {/* Additional Info */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-600">
+          <p className="text-sm text-gray-700">
             All packages include our 48-hour filing guarantee and satisfaction guarantee.
           </p>
         </div>

@@ -23,19 +23,19 @@ export default function FinalCTA({
     'Join hundreds of professionals who trust us with their PLLC formation. Get started today.';
 
   return (
-    <section className="bg-gradient-to-r from-blue-600 to-blue-800 py-16 sm:py-24">
+    <section className="bg-[#f88b00] py-20 sm:py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
           {headline || defaultHeadline}
         </h2>
-        <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+        <p className="text-xl text-orange-50 mb-10 max-w-2xl mx-auto">
           {subheadline || defaultSubheadline}
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <CTALink
             href={ctaLink}
-            className="bg-white text-blue-600 px-8 py-4 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors inline-block"
+            className="bg-white text-[#f88b00] px-8 py-4 rounded-md text-lg font-medium hover:bg-gray-100 transition-colors inline-block"
             profession={profession}
             price={749}
             ctaText={ctaText}
@@ -53,7 +53,7 @@ export default function FinalCTA({
         </div>
 
         {/* Trust Indicators */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-blue-100">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-orange-50">
           <div className="flex items-center gap-2">
             <svg
               className="w-5 h-5"
