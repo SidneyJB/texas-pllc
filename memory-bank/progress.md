@@ -65,6 +65,17 @@
 - ✅ Refund policy: Satisfaction guarantee (refunds only if we make an error)
 - ✅ Pricing tiers: Complete ($749) and Premium ($949) only
 
+### Conversion Optimization
+- ✅ Competitor comparison page at `/compare` (TICKET-CVX-002)
+- ✅ Cost savings highlight section with true total cost comparisons
+- ✅ Detailed cost breakdown table (desktop) and cards (mobile)
+- ✅ "Why Professionals Choose Us" section with quantified outcomes
+- ✅ Social proof testimonials from competitor switchers
+- ✅ Navigation updated with professions dropdown
+- ✅ "Pricing & Comparison" link added to navigation and footer
+- ✅ Analytics tracking for comparison interactions
+- ✅ Comparison component exported and integrated
+
 ## What's Left to Build
 
 ### Phase 1: Foundation (Weeks 1-2)
@@ -135,6 +146,7 @@
 - ✅ TICKET-013: Performance Optimization
 - ✅ TICKET-016: Homepage
 - ✅ TICKET-017: SEO Optimization
+- ✅ TICKET-CVX-002: Competitor Comparison & Pricing Proof Layer
 - ✅ Additional profession landing pages (Attorney, Engineer, Physician)
 - ✅ Checkout page structure created
 

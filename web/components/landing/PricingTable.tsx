@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { CTALink } from '@/components/CTALink';
 
 export interface PricingTier {
@@ -108,9 +109,15 @@ export default function PricingTable({
 
         {/* Additional Info */}
         <div className="mt-12 text-center">
-          <p className="text-sm text-gray-700">
+          <p className="text-sm text-gray-700 mb-4">
             All packages include our 48-hour filing guarantee and satisfaction guarantee.
           </p>
+          <Link
+            href="/compare"
+            className="text-sm text-[#f88b00] hover:text-[#d97706] font-medium underline"
+          >
+            Compare with other options →
+          </Link>
         </div>
       </div>
     </section>

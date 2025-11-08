@@ -5,6 +5,7 @@ export { default as BenefitsSection } from './BenefitsSection';
 export { default as HowItWorks } from './HowItWorks';
 export { default as SocialProof } from './SocialProof';
 export { default as PricingTable } from './PricingTable';
+export { default as CompetitorComparison } from './CompetitorComparison';
 export { default as Guarantee } from './Guarantee';
 export { default as FAQ } from './FAQ';
 export { default as FinalCTA } from './FinalCTA';
@@ -16,6 +17,11 @@ export type { BenefitsSectionProps, Benefit } from './BenefitsSection';
 export type { HowItWorksProps, Step } from './HowItWorks';
 export type { SocialProofProps, Testimonial } from './SocialProof';
 export type { PricingTableProps, PricingTier } from './PricingTable';
+export type {
+  CompetitorComparisonProps,
+  CompetitorRow,
+  ComparisonTestimonial,
+} from './CompetitorComparison';
 export type { GuaranteeProps } from './Guarantee';
 export type { FAQProps, FAQItem } from './FAQ';
 export type { FinalCTAProps } from './FinalCTA';

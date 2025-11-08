@@ -1,10 +1,32 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isProfessionsOpen, setIsProfessionsOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setIsProfessionsOpen(false);
+      }
+    }
+
+    if (isProfessionsOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isProfessionsOpen]);
 
   return (
     <nav className="bg-white border-b border-gray-200">
@@ -20,29 +42,78 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
+              {/* Professions Dropdown */}
+              <div className="relative" ref={dropdownRef}>
+                <button
+                  onClick={() => setIsProfessionsOpen(!isProfessionsOpen)}
+                  className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium flex items-center gap-1"
+                  aria-expanded={isProfessionsOpen}
+                  aria-haspopup="true"
+                >
+                  Professions
+                  <svg
+                    className={`w-4 h-4 transition-transform ${
+                      isProfessionsOpen ? 'rotate-180' : ''
+                    }`}
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
+                  </svg>
+                </button>
+
+                {/* Dropdown Menu */}
+                {isProfessionsOpen && (
+                  <div className="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-50">
+                    <div className="py-1" role="menu">
+                      <Link
+                        href="/therapist"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        role="menuitem"
+                        onClick={() => setIsProfessionsOpen(false)}
+                      >
+                        Therapists
+                      </Link>
+                      <Link
+                        href="/physician"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        role="menuitem"
+                        onClick={() => setIsProfessionsOpen(false)}
+                      >
+                        Physicians
+                      </Link>
+                      <Link
+                        href="/engineer"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        role="menuitem"
+                        onClick={() => setIsProfessionsOpen(false)}
+                      >
+                        Engineers
+                      </Link>
+                      <Link
+                        href="/attorney"
+                        className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                        role="menuitem"
+                        onClick={() => setIsProfessionsOpen(false)}
+                      >
+                        Attorneys
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               <Link
-                href="/therapist"
+                href="/compare"
                 className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
               >
-                Therapists
-              </Link>
-              <Link
-                href="/physician"
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
-              >
-                Physicians
-              </Link>
-              <Link
-                href="/engineer"
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
-              >
-                Engineers
-              </Link>
-              <Link
-                href="/attorney"
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium"
-              >
-                Attorneys
+                Pricing & Comparison
               </Link>
               <Link
                 href="/checkout"
@@ -130,6 +201,13 @@ export default function Navigation() {
               onClick={() => setIsOpen(false)}
             >
               Attorneys
+            </Link>
+            <Link
+              href="/compare"
+              className="text-gray-700 hover:text-gray-900 block px-3 py-2 text-base font-medium"
+              onClick={() => setIsOpen(false)}
+            >
+              Compare Options
             </Link>
             <Link
               href="/checkout"

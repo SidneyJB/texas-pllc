@@ -41,6 +41,11 @@ export default function Footer() {
                   Attorney PLLC
                 </Link>
               </li>
+              <li>
+                <Link href="/compare" className="text-sm text-gray-600 hover:text-gray-900">
+                  Compare Options
+                </Link>
+              </li>
             </ul>
           </div>
 
