@@ -105,7 +105,7 @@ export default function TermsOfServicePage() {
               3.2 SLA Credit Policy
             </h3>
             <p className="text-gray-700 mb-4">
-              If we fail to file your PLLC within 48 business hours (as defined
+              If we fail to submit your filing within 48 business hours (as defined
               above), we will automatically issue a <strong>$100 credit</strong>{' '}
               to your account. This credit can be applied to:
             </p>
@@ -423,7 +423,9 @@ export default function TermsOfServicePage() {
                 <br />
                 Incaroo
                 <br />
-                [Address to be provided]
+                8911 N Capital of Texas Hwy, Suite 4200
+                <br />
+                Austin, TX 78759
               </p>
             </div>
           </section>

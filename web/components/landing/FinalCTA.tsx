@@ -12,7 +12,7 @@ export interface FinalCTAProps {
 export default function FinalCTA({
   headline,
   subheadline,
-  ctaText = 'Get Your PLLC Filed in 48 Hours — Guaranteed',
+  ctaText = 'Get Your Filing Submitted in 48 Hours — Guaranteed',
   ctaLink = '/checkout',
   profession,
 }: FinalCTAProps) {

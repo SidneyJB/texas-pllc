@@ -47,7 +47,7 @@ export default function PhysicianLandingPage() {
   // Hero content
   const heroContent = {
     profession: 'Physician',
-    headline: 'Get Your Texas Physician PLLC Filed in 48 Hours — Everything Included for $749',
+    headline: 'Get Your Texas Physician PLLC Filing Submitted in 48 Hours — Everything Included for $749',
     subheadline:
       'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start seeing patients faster with physician-specific expertise.',
     ctaText: 'Get Started',
@@ -222,7 +222,7 @@ export default function PhysicianLandingPage() {
     {
       title: '48-Hour Filing Guarantee',
       description:
-        'We file your PLLC within 48 business hours, or you get a $100 credit automatically. No excuses. No delays.',
+        'We submit your filing within 48 business hours, or you get a $100 credit automatically. No excuses. No delays.',
     },
     {
       title: 'Satisfaction Guarantee',
@@ -241,7 +241,7 @@ export default function PhysicianLandingPage() {
     {
       question: 'How long does PLLC formation take?',
       answer:
-        'We file your PLLC within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
+        'We submit your filing within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
     },
     {
       question: 'What\'s included in the $749 price?',

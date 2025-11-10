@@ -46,7 +46,7 @@ export default function TherapistLandingPage() {
   // Hero content
   const heroContent = {
     profession: 'Therapist',
-    headline: 'Get Your Texas Therapist PLLC Filed in 48 Hours — Everything Included for $749',
+    headline: 'Get Your Texas Therapist PLLC Filing Submitted in 48 Hours — Everything Included for $749',
     subheadline:
       'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start seeing clients faster with profession-specific expertise.',
     ctaText: 'Get Started',
@@ -97,7 +97,7 @@ export default function TherapistLandingPage() {
     {
       title: 'Launch Your Practice in 48 Hours',
       description:
-        'While competitors take 2-3 weeks, we file your PLLC in 48 hours so you can start seeing clients faster. No waiting weeks or months.',
+        'While competitors take 2-3 weeks, we submit your filing in 48 hours so you can start seeing clients faster. No waiting weeks or months.',
     },
     {
       title: 'Keep Your Home and Savings Protected',
@@ -220,7 +220,7 @@ export default function TherapistLandingPage() {
     {
       title: '48-Hour Filing Guarantee',
       description:
-        'We file your PLLC within 48 business hours, or you get a $100 credit automatically. No excuses. No delays.',
+        'We submit your filing within 48 business hours, or you get a $100 credit automatically. No excuses. No delays.',
     },
     {
       title: 'Satisfaction Guarantee',
@@ -239,7 +239,7 @@ export default function TherapistLandingPage() {
     {
       question: 'How long does PLLC formation take?',
       answer:
-        'We file your PLLC within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
+        'We submit your filing within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
     },
     {
       question: 'What\'s included in the $749 price?',

@@ -179,7 +179,7 @@ export default function PrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Government Agencies:</strong> With Texas Secretary of
-                State and IRS as required to file your PLLC and obtain your EIN
+                State and IRS as required to submit your filing and obtain your EIN
               </li>
               <li>
                 <strong>Legal Requirements:</strong> When required by law,
@@ -331,7 +331,9 @@ export default function PrivacyPolicyPage() {
                 <br />
                 Incaroo
                 <br />
-                [Address to be provided]
+                8911 N Capital of Texas Hwy, Suite 4200
+                <br />
+                Austin, TX 78759
               </p>
             </div>
           </section>

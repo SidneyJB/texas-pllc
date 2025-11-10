@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import Hero from '@/components/landing/Hero';
 import { CTALink } from '@/components/CTALink';
 
 export const metadata: Metadata = {
@@ -135,7 +134,10 @@ export default function HomePage() {
     description: 'Professional Texas PLLC formation service. $749 all-inclusive. 48-hour filing guarantee.',
     address: {
       '@type': 'PostalAddress',
+      streetAddress: '8911 N Capital of Texas Hwy, Suite 4200',
+      addressLocality: 'Austin',
       addressRegion: 'TX',
+      postalCode: '78759',
       addressCountry: 'US',
     },
     sameAs: [
@@ -178,13 +180,340 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <Hero
-        profession="Professional"
-        headline="Get Your Texas PLLC Filed in 48 Hours — Everything Included for $749"
-        subheadline="State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start your practice faster with profession-specific expertise."
-        ctaText="Get Started"
-        ctaLink="/therapist"
-      />
+      <section className="relative py-8 lg:py-24" aria-labelledby="hero-heading">
+        <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-b from-[#f88b00]/5 via-transparent to-transparent"></div>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid items-start gap-6 lg:grid-cols-3">
+            {/* Left Column - Main Content */}
+            <div className="lg:col-span-2">
+              <div className="flex max-w-2xl flex-col gap-3 sm:gap-4 lg:gap-5">
+                <p className="text-sm font-medium uppercase tracking-wide text-[#f88b00]/90">
+                  Texas PLLC Formation
+                </p>
+                <h1 id="hero-heading" className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <span className="rounded-lg bg-[#f88b00]/10 px-2 py-1 text-[#f88b00]">Texas PLLC</span> formation with profession-specific expertise.
+                </h1>
+                <p className="text-xl leading-8 text-gray-700">
+                  We navigate the Texas PLLC formation process for licensed professionals. Flat{' '}
+                  <strong className="text-gray-900">$749</strong> all-inclusive. No surprise fees.
+                </p>
+                <div className="mt-0">
+                  <div className="mb-0 flex items-center gap-2">
+                    <span className="text-sm font-medium">Includes:</span>
+                  </div>
+                  <ul className="grid grid-cols-1 gap-0.5 text-sm text-gray-700">
+                    <li className="flex items-start gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                        aria-hidden="true"
+                      >
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <span>Texas Secretary of State filing (Form 206, $300 fee included)</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                        aria-hidden="true"
+                      >
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <span>Guidance for Texas&apos;s naming requirements</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                        aria-hidden="true"
+                      >
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <span>Accurate and efficient filing to minimize processing time</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                        aria-hidden="true"
+                      >
+                        <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                      </svg>
+                      <span>
+                        Everything you need to open your practice (EIN, Operating Agreement, Registered Agent end-to-end)
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+                <div className="mt-0 flex flex-wrap items-center gap-1">
+                  <CTALink
+                    href="/checkout"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-10 rounded-md px-6"
+                    profession="Professional"
+                    price={749}
+                    ctaText="Start your PLLC"
+                    location="hero"
+                    trackAsCheckout={true}
+                  >
+                    Start your PLLC — $749
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="ml-2 h-4 w-4"
+                      aria-hidden="true"
+                    >
+                      <path d="M5 12h14"></path>
+                      <path d="m12 5 7 7-7 7"></path>
+                    </svg>
+                  </CTALink>
+                  <Link
+                    aria-label="See how it works step by step"
+                    href="#how-it-works"
+                    className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium transition-all border border-gray-300 bg-white shadow-sm hover:bg-gray-50 hover:text-gray-900 h-10 rounded-md px-6"
+                  >
+                    How it works
+                  </Link>
+                </div>
+                <p className="text-sm text-gray-600">
+                  ~5–7 minutes to complete • Licensed professionals only (PLLC) • No hidden fees
+                </p>
+              </div>
+            </div>
+
+            {/* Right Column - Sidebar Card */}
+            <aside className="lg:col-span-1 lg:sticky lg:top-24" id="how-it-works">
+              <div className="bg-white flex flex-col gap-6 rounded-xl border py-6 border-[#f88b00]/10 shadow-sm">
+                <div className="p-6 sm:p-7">
+                  <span className="text-xl font-medium mb-3 block">
+                    We&apos;ve helped form many Texas PLLCs
+                  </span>
+                  <div className="mt-3 mb-3 flex items-center gap-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="mt-0.5 h-8 w-7 text-[#f88b00] flex-shrink-0"
+                      aria-hidden="true"
+                    >
+                      <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+                      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                      <path d="M12 11h4"></path>
+                      <path d="M12 16h4"></path>
+                      <path d="M8 11h.01"></path>
+                      <path d="M8 16h.01"></path>
+                    </svg>
+                    <span className="text-lg font-medium">Here&apos;s what you get with our expertise:</span>
+                  </div>
+                  <div className="my-6 h-px w-full bg-gray-200/70"></div>
+                  <div>
+                    <ul className="grid grid-cols-1 gap-2 text-lg text-gray-700">
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Pre-approval of filing package</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>PLLC Articles of Organization prepared & filed</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Federal Tax ID Number</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Free first year registered agent service</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Signature-ready Operating Agreement</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Email updates at each milestone</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="mt-0.5 h-3 w-3 text-[#f88b00] flex-shrink-0"
+                          aria-hidden="true"
+                        >
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+                          <path d="m9 12 2 2 4-4"></path>
+                        </svg>
+                        <span>Delivery of all documents required to open a bank account and start doing business</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="mt-6">
+                    <CTALink
+                      href="/checkout"
+                      className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-9 px-4 py-2 w-full"
+                      profession="Professional"
+                      price={749}
+                      ctaText="Begin your order"
+                      location="hero-sidebar"
+                      trackAsCheckout={true}
+                    >
+                      Begin your order
+                    </CTALink>
+                  </div>
+                  <p className="mt-3 text-center text-xs leading-6 text-gray-600">
+                    We are not a law firm and do not provide legal advice.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
 
       {/* Service Overview */}
       <section className="bg-gray-50 py-20 sm:py-24">
@@ -342,7 +671,7 @@ export default function HomePage() {
                   </div>
                   <div className="mt-4 bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <p className="text-sm text-gray-900">
-                      <span className="font-semibold">48-Hour Filing Guarantee:</span> We file your PLLC within 48 business hours, or you get a $100 credit automatically.
+                      <span className="font-semibold">48-Hour Filing Guarantee:</span> We submit your filing within 48 business hours, or you get a $100 credit automatically.
                     </p>
                   </div>
                 </div>
@@ -458,7 +787,7 @@ export default function HomePage() {
               {
                 title: '48-Hour Filing Guarantee',
                 description:
-                  'We file your PLLC within 48 business hours, or you get a $100 credit automatically.',
+                  'We submit your filing within 48 business hours, or you get a $100 credit automatically.',
                 icon: (
                   <svg
                     className="w-8 h-8 text-white"

@@ -250,7 +250,7 @@ export default function CheckoutContent({ profession }: CheckoutContentProps) {
                       48-Hour Filing Guarantee
                     </p>
                     <p className="text-xs text-orange-700 mt-1">
-                      We'll file your PLLC within 48 business hours or you'll
+                      We'll submit your filing within 48 business hours or you'll
                       receive a $100 credit.
                     </p>
                   </div>

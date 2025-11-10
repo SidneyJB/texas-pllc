@@ -69,9 +69,16 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 pt-8 border-t border-gray-200">
-          <p className="text-xs text-gray-500 text-center">
-            © {new Date().getFullYear()} Incaroo. All rights reserved.
-          </p>
+          <div className="text-xs text-gray-500 text-center space-y-1">
+            <p>© {new Date().getFullYear()} Incaroo. All rights reserved.</p>
+            <p>
+              Incaroo
+              <br />
+              8911 N Capital of Texas Hwy, Suite 4200
+              <br />
+              Austin, TX 78759
+            </p>
+          </div>
         </div>
       </div>
     </footer>

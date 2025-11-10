@@ -150,7 +150,7 @@ const defaultTestimonials: ComparisonTestimonial[] = [
   {
     name: 'Dr. Sarah M.',
     profession: 'Licensed Professional Counselor',
-    text: 'I tried LegalZoom first, but they kept adding fees. Switched to Texas PLLC Formation and got everything for one price. Filed in 48 hours exactly as promised.',
+    text: 'I tried LegalZoom first, but they kept adding fees. Switched to Texas PLLC Formation and got everything for one price. Filing submitted in 48 hours exactly as promised.',
     previousService: 'LegalZoom',
   },
   {
@@ -485,7 +485,7 @@ export default function CompetitorComparison({
               48-Hour Filing Guarantee
             </h3>
             <p className="text-gray-700 mb-4">
-              We file your PLLC within 48 business hours, or you get a $100 credit
+              We submit your filing within 48 business hours, or you get a $100 credit
               automatically. No excuses. No delays.
             </p>
             <p className="text-sm text-gray-600 mb-6">
