@@ -1,16 +1,7 @@
 import type { Metadata } from 'next';
-import {
-  Hero,
-  ProblemSection,
-  SolutionSection,
-  BenefitsSection,
-  HowItWorks,
-  SocialProof,
-  PricingTable,
-  Guarantee,
-  FAQ,
-  FinalCTA,
-} from '@/components/landing';
+import Link from 'next/link';
+import { CTALink } from '@/components/CTALink';
+import { Shield, ClipboardList, FileCheck2, CheckCircle, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Attorney PLLC Formation Texas | $749 All-Inclusive | 48-Hour Filing',
@@ -43,390 +34,269 @@ export const metadata: Metadata = {
   },
 };
 
+const PRICE = 749;
+
+const ATTORNEY_FAQ = [
+  {
+    question: 'Do attorneys need State Bar approval before forming a PLLC?',
+      answer:
+      'In Texas, you form your PLLC with the Secretary of State first, then update your State Bar registration. We handle the state filing and provide guidance for State Bar updates. The sequence matters: state filing → EIN → State Bar update.',
+    },
+    {
+    question: 'Who can own or manage an attorney PLLC in Texas?',
+      answer:
+      'Ownership and control are generally limited to licensed attorneys who can lawfully provide legal services. We help you structure members/managers to align with Texas rules and State Bar requirements.',
+    },
+    {
+    question: 'Can I include non-attorney staff in my PLLC?',
+      answer:
+      'While support staff may work with your practice, PLLC ownership and professional control are generally restricted to licensed attorneys. We structure your documents to reflect compliant governance.',
+    },
+    {
+    question: 'What naming issues commonly delay attorney PLLC approvals?',
+      answer:
+      'Names must include "PLLC" or "Professional Limited Liability Company", comply with State Bar advertising rules, and reflect your actual legal scope. We provide compliant options and conduct name screening to avoid state objections.',
+    },
+    {
+    question: 'Is the 48-hour filing guarantee included in the price?',
+      answer:
+      `Yes. We submit your filing within 48 business hours, or you get a $100 credit automatically. It's fully included in the $${PRICE} flat fee — no surprise add-ons.`,
+    },
+    {
+    question: 'What documents will I get for banking, IOLTA setup, and leasing?',
+      answer:
+      'You receive EIN confirmation, filed Form 206, Operating Agreement, and Registered Agent information — the standard bank-ready set. These are also commonly requested for IOLTA account setup and landlords.',
+    },
+    {
+    question: 'Can one attorney PLLC operate multiple locations in Texas?',
+      answer:
+      'Yes. Many law firms add locations as they grow. We set up your formation to support expansion and explain any State Bar notification requirements if you later add offices in different areas.',
+    },
+    {
+    question: 'How long does attorney PLLC formation usually take?',
+      answer:
+      'We submit your filing within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
+  },
+];
+
 export default function AttorneyLandingPage() {
-  // Hero content
-  const heroContent = {
-    profession: 'Attorney',
-    headline: 'Get Your Texas Attorney PLLC Filing Submitted in 48 Hours — Everything Included for $749',
-    subheadline:
-      'State filing, EIN, Operating Agreement, and Registered Agent—all handled for you. Start practicing law faster with attorney-specific expertise.',
-    ctaText: 'Get Started',
-    ctaLink: '/checkout?profession=attorney',
-  };
-
-  // Problem section content
-  const problems = [
-    {
-      title: 'State Bar Compliance Requirements',
-      description:
-        'You need to ensure your PLLC formation complies with State Bar rules and ethics requirements. One misstep could lead to compliance issues or disciplinary action.',
-    },
-    {
-      title: 'IOLTA Account Setup Complexity',
-      description:
-        'Setting up your IOLTA (Interest on Lawyers Trust Accounts) requires proper entity formation first. You need your PLLC formed correctly before opening trust accounts.',
-    },
-    {
-      title: 'Malpractice Protection Concerns',
-      description:
-        'You want proper liability protection for your practice. Forming a PLLC correctly ensures your personal assets are protected from business liabilities.',
-    },
-    {
-      title: 'Time Away from Billable Hours',
-      description:
-        'Every hour spent on paperwork is an hour not spent on client work. You need fast, reliable PLLC formation so you can get back to practicing law.',
-    },
-    {
-      title: 'Advertising Rules Compliance',
-      description:
-        'Texas has specific rules about attorney advertising and firm names. You need to ensure your PLLC name complies with State Bar advertising regulations.',
-    },
-  ];
-
-  // Solution section content
-  const solutionFeatures = [
-    'Complete state filing with Texas Secretary of State',
-    'EIN (Employer Identification Number) obtained for you',
-    'Operating Agreement included',
-    'First-year Registered Agent service',
-    'Banking packet and IOLTA setup guidance',
-    'Compliance checklist for State Bar requirements',
-    '48-hour filing guarantee',
-  ];
-
-  // Benefits section content
-  const benefits = [
-    {
-      title: 'Get Started Faster',
-      description:
-        'Your PLLC is filed within 48 hours, so you can open your IOLTA account and start practicing sooner. No waiting weeks or months.',
-    },
-    {
-      title: 'Protect Your Personal Assets',
-      description:
-        'A PLLC separates your personal assets from your practice. If something goes wrong, your home and savings stay protected.',
-    },
-    {
-      title: 'Save Time and Stress',
-      description:
-        'We handle all the paperwork and filings. You don\'t spend hours researching forms or navigating confusing state websites.',
-    },
-    {
-      title: 'Stay Compliant',
-      description:
-        'We know the specific requirements for attorney PLLCs in Texas, including State Bar rules and ethics requirements.',
-    },
-    {
-      title: 'Clear, Transparent Pricing',
-      description:
-        'One price covers everything. No surprise fees. No upsells. You know exactly what you\'re paying upfront.',
-    },
-    {
-      title: 'Expert Support',
-      description:
-        'Our team specializes in attorney PLLC formations. We understand your profession\'s unique needs and State Bar requirements.',
-    },
-    {
-      title: 'Satisfaction Guarantee',
-      description:
-        'If we make an error on our end, we\'ll fix it at no cost or provide a full refund. We stand behind our work.',
-    },
-  ];
-
-  // How It Works content
-  const steps = [
-    {
-      number: 1,
-      title: 'Complete Your Order',
-      description:
-        'Tell us about your practice and provide your State Bar number. The whole process takes about 6 minutes.',
-    },
-    {
-      number: 2,
-      title: 'We Handle Everything',
-      description:
-        'We file your Form 206 with Texas, get your EIN, create your Operating Agreement, and set up your Registered Agent.',
-    },
-    {
-      number: 3,
-      title: 'Receive Your Complete Packet',
-      description:
-        'Within 48 hours, you get everything you need: filing confirmation, EIN letter, Operating Agreement, and banking documents.',
-    },
-  ];
-
-  // Social Proof content
-  const testimonials = [
-    {
-      name: 'David K.',
-      profession: 'Criminal Defense Attorney',
-      rating: 5,
-      text: 'I needed my PLLC formed quickly to start my solo practice. They handled everything perfectly and I had my documents in 48 hours. The Operating Agreement was tailored for attorneys, which gave me confidence.',
-      location: 'Dallas, TX',
-    },
-    {
-      name: 'Maria S.',
-      profession: 'Family Law Attorney',
-      rating: 5,
-      text: 'The price was clear from the start - no surprises. They understood State Bar requirements and made sure everything was compliant. Highly recommend.',
-      location: 'Houston, TX',
-    },
-    {
-      name: 'Robert T.',
-      profession: 'Personal Injury Attorney',
-      rating: 5,
-      text: 'I was worried about compliance issues, but they knew exactly what attorneys need. The process was smooth and I could focus on my cases instead of paperwork.',
-      location: 'Austin, TX',
-    },
-  ];
-
-  // Pricing tiers
-  const pricingTiers = [
-    {
-      name: 'Complete',
-      price: 749,
-      description: 'Everything you need (Most Popular)',
-      features: [
-        'State filing (Form 206) - $300 fee included',
-        'EIN issuance',
-        'Operating Agreement',
-        'First-year Registered Agent',
-        'Banking packet & IOLTA guidance',
-        'Compliance checklist',
-        '48-hour filing guarantee',
-      ],
-      highlighted: true,
-      ctaText: 'Start My Formation - $749',
-      ctaLink: '/checkout?profession=attorney',
-    },
-    {
-      name: 'Premium',
-      price: 949,
-      description: 'Complete + priority support',
-      features: [
-        'Everything in Complete',
-        'Priority support',
-        'Rush processing available',
-        'Additional compliance review',
-      ],
-      ctaText: 'Start My Formation - $949',
-      ctaLink: '/checkout?profession=attorney&tier=premium',
-    },
-  ];
-
-  // Guarantee content
-  const guarantees = [
-    {
-      title: '48-Hour Filing Guarantee',
-      description:
-        'We submit your filing within 48 business hours, or you get a $100 credit automatically. No excuses. No delays.',
-    },
-    {
-      title: 'Satisfaction Guarantee',
-      description:
-        'If we make an error on our end, we\'ll fix it at no cost or provide a full refund. We stand behind our work.',
-    },
-  ];
-
-  // FAQ content
-  const faqItems = [
-    {
-      question: 'What\'s the difference between a PLLC and an LLC for attorneys?',
-      answer:
-        'A PLLC (Professional Limited Liability Company) is specifically for licensed professionals like attorneys. It provides the same liability protection as an LLC but is designed for your profession. In Texas, attorneys must form a PLLC, not a regular LLC, to comply with State Bar rules.',
-    },
-    {
-      question: 'How long does PLLC formation take?',
-      answer:
-        'We submit your filing within 48 business hours after you complete your order. You\'ll receive your complete packet with filing confirmation, EIN, and all documents within that timeframe.',
-    },
-    {
-      question: 'What\'s included in the $749 price?',
-      answer:
-        'Everything you need: Texas Form 206 filing ($300 state fee included), EIN issuance, Operating Agreement, first-year Registered Agent service, banking packet, IOLTA setup guidance, and compliance checklist. No hidden fees.',
-    },
-    {
-      question: 'Do I need a Registered Agent?',
-      answer:
-        'Yes, Texas requires all PLLCs to have a Registered Agent. We include your first year of Registered Agent service in the Complete package. This ensures you receive important legal and tax documents on time.',
-    },
-    {
-      question: 'What State Bar information do I need?',
-      answer:
-        'You\'ll need your Texas State Bar number. We verify your license is active before filing to ensure compliance with State Bar requirements.',
-    },
-    {
-      question: 'Will my PLLC name comply with State Bar advertising rules?',
-      answer:
-        'We check name availability and ensure it meets Texas requirements. However, you should review State Bar advertising rules for your specific practice area to ensure full compliance.',
-    },
-    {
-      question: 'Can I use my own Operating Agreement?',
-      answer:
-        'Yes, but our Operating Agreement includes all necessary clauses. It saves you time and ensures compliance.',
-    },
-    {
-      question: 'Do you help with IOLTA account setup?',
-      answer:
-        'The Complete package includes guidance for IOLTA account setup, but you\'ll need to open the account directly with your bank. We provide all the documents you need.',
-    },
-    {
-      question: 'What happens after my PLLC is formed?',
-      answer:
-        'You\'ll receive your complete packet with filing confirmation, EIN letter, Operating Agreement, Registered Agent information, and banking documents. You can then open your IOLTA account and start practicing.',
-    },
-    {
-      question: 'Is there ongoing support after formation?',
-      answer:
-        'Yes, we provide a compliance checklist and ongoing Registered Agent service. We also send reminders for important deadlines like annual reports.',
-    },
-    {
-      question: 'What if I need to make changes later?',
-      answer:
-        'We can help with amendments, name changes, or other modifications. Contact us for assistance with any changes to your PLLC.',
-    },
-    {
-      question: 'Do you offer refunds?',
-      answer:
-        'Yes, if we make an error on our end, we\'ll fix it at no cost or provide a full refund. We stand behind our work and will make things right if something goes wrong.',
-    },
-  ];
-
-  // Schema markup for SEO
-  const schemaMarkup = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: 'Attorney PLLC Formation Texas',
-    description:
-      'Professional Texas PLLC formation service for attorneys and law firms. $749 all-inclusive. 48-hour filing guarantee.',
-    provider: {
-      '@type': 'Organization',
-      name: 'Incaroo',
-    },
-    areaServed: {
-      '@type': 'State',
-      name: 'Texas',
-    },
-    offers: {
-      '@type': 'Offer',
-      price: '749',
-      priceCurrency: 'USD',
-      description: 'Complete PLLC formation service',
-    },
-  };
-
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
-      />
-      <Hero {...heroContent} />
-      <ProblemSection profession="Attorney" problems={problems} headline="Why Most Attorneys Struggle with PLLC Formation" />
-      
-      {/* Profession-Specific Content Section */}
-      <section className="bg-white py-20 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Why Texas Attorneys Need a PLLC for Law Practice
-            </h2>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              If you're a licensed attorney in Texas, forming a Professional Limited Liability Company (PLLC) is essential for protecting your personal assets while practicing law. Texas law requires licensed attorneys to form a PLLC, not a regular LLC, when operating a law practice under a business entity. This requirement is mandated by the Texas State Bar and is part of the Texas Disciplinary Rules of Professional Conduct.
+      {/* HERO */}
+      <section className="bg-gradient-to-b from-[#f88b00]/5 via-white to-white py-20 lg:py-32">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl lg:text-7xl">
+            Form your <span className="text-[#f88b00]">Attorney PLLC</span> in Texas — compliant, clear, and built for law practice
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-gray-700">
+            Built for Texas attorneys launching or growing a law practice. We handle state filing, guide compliant naming that meets State Bar advertising rules,
+            file precisely with the Secretary of State, and deliver a bank-ready package —
+            all for <strong>${PRICE}</strong>. No hidden fees.
+          </p>
+
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 text-xs text-gray-600">
+            <span className="rounded-full border border-gray-300 px-3 py-1">Texas Secretary of State Filing</span>
+            <span className="rounded-full border border-gray-300 px-3 py-1">EIN Included</span>
+            <span className="rounded-full border border-gray-300 px-3 py-1">Operating Agreement</span>
+            <span className="rounded-full border border-gray-300 px-3 py-1">48-Hour Filing</span>
+            <span className="rounded-full border border-gray-300 px-3 py-1">State Bar Compliant</span>
+          </div>
+
+          <div className="mt-10 flex justify-center">
+            <CTALink
+              href="/checkout?profession=attorney"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-10 px-6"
+              profession="Attorney"
+              price={PRICE}
+              ctaText="Start your Attorney PLLC"
+              location="attorney-hero"
+              trackAsCheckout={true}
+            >
+              Start your Attorney PLLC — ${PRICE}
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </CTALink>
+          </div>
+          <p className="mt-3 text-sm text-gray-600">Licensed professionals only • Secure checkout • No upsells</p>
+        </div>
+      </section>
+
+      {/* WHY IT'S DIFFERENT FOR ATTORNEYS */}
+      <section className="py-20 lg:py-28 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">Built for Texas Law Practices</h2>
+            <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
+              Texas rules for legal entities are specific — from state filing to State Bar compliance and bank documentation.
+              We form attorney PLLCs that pass review, support solo and group practices, and scale with you as you add attorneys or locations.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              A PLLC provides crucial liability protection for your law practice. While it doesn't protect you from malpractice claims (you still need professional liability insurance), it does protect your personal assets—your home, savings, retirement accounts, and other personal property—from business debts, employment disputes, contract issues, and other practice liabilities unrelated to malpractice. This separation is critical for attorneys who may face client disputes, employment matters, or other business-related legal issues.
+            <p className="mt-6 text-base text-gray-700 max-w-3xl mx-auto">
+              Expect a structured, transparent process: name vetting → state filing → EIN → State Bar update guidance → bank-ready package.
+              We explain each step in plain English and send timely updates so you always know what's next.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              The Texas State Bar requires attorneys to properly register their PLLC and ensure compliance with ethics rules regarding firm names, advertising, and entity structure. Your PLLC name must comply with State Bar advertising rules, which prohibit misleading names and require proper identification of the practice structure. Getting this wrong can result in disciplinary action or delays in opening your practice.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              What Makes Our Attorney PLLC Formation Different
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              We specialize in PLLC formation for attorneys and law firms. We handle all the paperwork and filings, ensuring your formation meets Texas requirements and State Bar expectations. Our Operating Agreement includes all necessary clauses to get your practice started.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              IOLTA Account Setup and Trust Fund Requirements
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-4">
-              After your PLLC is formed, you'll need to set up an IOLTA account for client trust funds. The sequence is important:
-            </p>
-            <ol className="list-decimal pl-6 space-y-2 text-gray-700 mb-6">
-              <li><strong>Form your PLLC</strong> with the Texas Secretary of State (we handle this)</li>
-              <li><strong>Obtain your EIN</strong> from the IRS (we handle this)</li>
-              <li><strong>Open your IOLTA account</strong> at a bank using your PLLC's EIN and formation documents</li>
-              <li><strong>Register your PLLC</strong> with the Texas State Bar</li>
-              <li><strong>Set up your operating account</strong> for firm revenue and expenses</li>
-            </ol>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Our Complete package includes IOLTA setup guidance and all documents needed to open your IOLTA account. We ensure your formation documents meet State Bar requirements for trust account compliance.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              State Bar Compliance and Advertising Rules
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Texas State Bar rules govern attorney advertising and firm names. Your PLLC name must comply with these rules, which prohibit misleading names and require proper identification. We check name availability and ensure your chosen name meets Texas requirements, but you should review State Bar advertising rules for your specific practice area to ensure full compliance. Our Operating Agreement includes provisions that help maintain compliance with State Bar ethics rules.
-            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <Shield className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">State Filing, Done Right</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We prepare your Form 206 submission — scope-accurate purpose language and ownership that aligns with law practice rules.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <ClipboardList className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">Naming That Clears Review</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We help you avoid restricted terms, misleading claims, and designator mistakes. Names must include "PLLC" and comply with State Bar advertising rules.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <FileCheck2 className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">Accurate Filing & Documents</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Form 206 written specifically for attorneys and filed correctly with the Texas Secretary of State — with plain-English updates at each milestone.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4">
+                <CheckCircle className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">State Bar Compliance</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We ensure your formation documents align with State Bar requirements and provide guidance for IOLTA setup and bar updates after formation.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <SolutionSection profession="Attorney" features={solutionFeatures} />
-      <BenefitsSection profession="Attorney" benefits={benefits} />
-      <HowItWorks steps={steps} />
-      
-      {/* Additional Profession-Specific Content */}
-      <section className="bg-gray-50 py-20 sm:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-              Common Questions About Attorney PLLC Formation in Texas
-            </h2>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              Can I practice law without forming a PLLC?
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Yes, you can practice as a sole proprietor under your own name without forming a PLLC. However, this provides no liability protection for your personal assets. Most attorneys form a PLLC to protect personal assets and to practice under a firm name. Additionally, many banks require a business entity for IOLTA account setup, and some clients prefer working with a formal business entity.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              What about IOLTA account requirements?
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Texas requires attorneys to maintain an IOLTA account for client trust funds. You'll need your PLLC's EIN and formation documents to open this account. Our banking packet includes all documents needed for IOLTA account setup, including the resolution authorizing the account and the EIN letter. We provide guidance on IOLTA compliance requirements and help ensure your PLLC structure supports proper trust fund management.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              Can multiple attorneys form a PLLC together?
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              Yes, multiple attorneys can form a multi-member PLLC. Our Operating Agreement can accommodate multiple members and includes proper ownership percentages, profit-sharing arrangements, decision-making processes, and buy-sell provisions. We ensure compliance with State Bar rules regarding multi-attorney firms and help structure your Operating Agreement to address partnership dissolution, member disputes, and practice transitions.
-            </p>
-            
-            <h3 className="text-2xl font-bold text-gray-900 mt-8 mb-4">
-              What about State Bar registration and ethics compliance?
-            </h3>
-            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-              After your PLLC is formed, you'll need to register it with the Texas State Bar and ensure compliance with ethics rules. Our compliance checklist includes State Bar registration requirements and helps you understand your ongoing obligations. We ensure your PLLC name complies with advertising rules and that your Operating Agreement includes provisions that support ethics compliance.
-            </p>
+      {/* WHAT YOU RECEIVE */}
+      <section className="py-20 lg:py-28">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl text-center">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Everything you need to open and grow your law practice</h2>
+          <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
+            A complete, bank-ready formation package designed for IOLTA setup, leasing, and business operations.
+          </p>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4 justify-center">
+                <FileCheck2 className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">Full Formation</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Form 206 preparation, state filing, and EIN — end-to-end, without templates or guesswork.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4 justify-center">
+                <ClipboardList className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">Operating Agreement</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                A signature-ready Operating Agreement for solo or group law practices — ready for lender and landlord review.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+              <div className="flex items-center gap-3 mb-4 justify-center">
+                <CheckCircle className="h-5 w-5 text-[#f88b00]" />
+                <h3 className="text-lg font-semibold text-gray-900">Bank-Ready Package</h3>
+              </div>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                EIN confirmation, filed Form 206, Operating Agreement, and Registered Agent information — exactly what most banks request for IOLTA setup.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-10">
+            <CTALink
+              href="/checkout?profession=attorney"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-10 px-6"
+              profession="Attorney"
+              price={PRICE}
+              ctaText="Start your Attorney PLLC"
+              location="attorney-what-you-receive"
+              trackAsCheckout={true}
+            >
+              Start your Attorney PLLC — ${PRICE}
+            </CTALink>
           </div>
         </div>
       </section>
+
+      {/* PROFESSION-SPECIFIC FAQ */}
+      <section className="py-20 lg:py-28 bg-gray-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">Attorney PLLC FAQs</h2>
+            <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
+              Clear answers to common questions attorneys ask about forming a Professional Limited Liability Company in Texas.
+            </p>
+          </div>
+
+          <div className="grid gap-8 md:grid-cols-2">
+            {ATTORNEY_FAQ.map((item) => (
+              <div key={item.question} className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">{item.question}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">{item.answer}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <CTALink
+              href="/checkout?profession=attorney"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-10 px-6"
+              profession="Attorney"
+              price={PRICE}
+              ctaText="Start your Attorney PLLC"
+              location="attorney-faq"
+              trackAsCheckout={true}
+            >
+              Start your Attorney PLLC — ${PRICE}
+            </CTALink>
+          </div>
+          <p className="mt-4 text-center text-sm text-gray-600">This is general information, not legal advice.</p>
+        </div>
+      </section>
       
-      <SocialProof testimonials={testimonials} />
-      <PricingTable tiers={pricingTiers} profession="Attorney" />
-      <Guarantee guarantees={guarantees} />
-      <FAQ items={faqItems} />
-      <FinalCTA
+      {/* TRUST & CTA */}
+      <section className="bg-gray-100 py-20 lg:py-28">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">We understand Texas law practices</h2>
+          <p className="mt-6 text-lg text-gray-700 max-w-3xl mx-auto">
+            From state filing to EIN and bank-ready documents, our process is built for attorneys — solo practice, group practice,
+            or multi-location growth.
+          </p>
+          <p className="mt-6 text-gray-700 max-w-2xl mx-auto">
+            We're based in Texas and actually answer questions. No scripts. No bots. Just experienced help for licensed professionals.
+          </p>
+
+          <div className="mt-10 flex justify-center">
+            <CTALink
+              href="/checkout?profession=attorney"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-[#f88b00] text-white hover:bg-[#d97706] h-10 px-6"
         profession="Attorney"
-        ctaLink="/checkout?profession=attorney"
-      />
+              price={PRICE}
+              ctaText="Start now"
+              location="attorney-final-cta"
+              trackAsCheckout={true}
+            >
+              Start now — ${PRICE}
+            </CTALink>
+          </div>
+          <p className="mt-4 text-sm text-gray-600">We are not a law firm and do not provide legal advice.</p>
+        </div>
+      </section>
     </>
   );
 }
-

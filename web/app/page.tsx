@@ -194,7 +194,7 @@ export default function HomePage() {
                   <span className="rounded-lg bg-[#f88b00]/10 px-2 py-1 text-[#f88b00]">Texas PLLC</span> formation with profession-specific expertise.
                 </h1>
                 <p className="text-xl leading-8 text-gray-700">
-                  We navigate the Texas PLLC formation process for licensed professionals. Flat{' '}
+                  We handle the Texas PLLC formation process for licensed professionals. Flat{' '}
                   <strong className="text-gray-900">$749</strong> all-inclusive. No surprise fees.
                 </p>
                 <div className="mt-0">
@@ -329,7 +329,7 @@ export default function HomePage() {
               <div className="bg-white flex flex-col gap-6 rounded-xl border py-6 border-[#f88b00]/10 shadow-sm">
                 <div className="p-6 sm:p-7">
                   <span className="text-xl font-medium mb-3 block">
-                    We&apos;ve helped form many Texas PLLCs
+                    We&apos;ve helped form hundreds of Texas PLLCs
                   </span>
                   <div className="mt-3 mb-3 flex items-center gap-2">
                     <svg
@@ -352,7 +352,7 @@ export default function HomePage() {
                       <path d="M8 11h.01"></path>
                       <path d="M8 16h.01"></path>
                     </svg>
-                    <span className="text-lg font-medium">Here&apos;s what you get with our expertise:</span>
+                    <span className="text-lg font-medium">Here&apos;s what you get:</span>
                   </div>
                   <div className="my-6 h-px w-full bg-gray-200/70"></div>
                   <div>
@@ -520,10 +520,10 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Everything You Need, All-Inclusive
+              Everything you need to form your Texas PLLC — one flat price
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              One price covers everything. No surprises. No upsells.
+              Flat <strong className="text-gray-900">$749</strong> — start to finish.
             </p>
           </div>
 
@@ -539,7 +539,7 @@ export default function HomePage() {
               },
               {
                 title: 'Operating Agreement',
-                description: 'Operating Agreement tailored to your needs',
+                description: 'Signature-ready Operating Agreement',
               },
               {
                 title: 'Registered Agent',
@@ -547,11 +547,11 @@ export default function HomePage() {
               },
               {
                 title: 'Banking Packet',
-                description: 'All documents needed to open your business bank account',
+                description: 'All documents banks actually ask for',
               },
               {
                 title: 'Compliance Checklist',
-                description: 'Step-by-step guide to stay compliant with Texas requirements',
+                description: 'Clear next steps to stay compliant',
               },
             ].map((item, index) => (
               <div
@@ -573,10 +573,10 @@ export default function HomePage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              How It Works
+              Simple, compliant 3-step process
             </h2>
             <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-              Get your PLLC formed in three simple steps. We handle all the details so you can focus on your practice.
+              Typical timeline: <strong>Submit today</strong> • <strong>We file within 48 hours</strong> • <strong>Receive your documents</strong>
             </p>
           </div>
 
@@ -597,10 +597,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    Complete Your Order
+                    Submit your details
                   </h3>
                   <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                    Tell us about your practice and provide your license information. The whole process takes about 6 minutes.
+                    Tell us about your practice, confirm license info, and choose a PLLC name. We flag name conflicts & PLLC-specific rules early.
                   </p>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="text-sm font-semibold text-gray-900 mb-2">What you'll provide:</p>
@@ -622,6 +622,7 @@ export default function HomePage() {
                         <span>Ownership structure (single member or multi-member)</span>
                       </li>
                     </ul>
+                    <p className="text-xs text-gray-600 mt-3">~5–7 minutes</p>
                   </div>
                 </div>
               </div>
@@ -635,21 +636,21 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    We Handle Everything
+                    We file & prepare everything
                   </h3>
                   <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                    Once your order is complete, we immediately begin processing your PLLC formation. Our team handles all the paperwork, filings, and compliance details.
+                    We prepare and submit your <strong>Form 206 (PLLC)</strong> to the Texas Secretary of State, then obtain your EIN and prepare all documents.
                   </p>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="text-sm font-semibold text-gray-900 mb-2">What we do:</p>
                     <ul className="space-y-1 text-sm text-gray-700">
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
-                        <span>File Form 206 with Texas Secretary of State ($300 fee included)</span>
+                        <span>Submit Form 206 to Texas Secretary of State ($300 fee included)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
-                        <span>Obtain your EIN (Employer Identification Number) from the IRS</span>
+                        <span>Obtain your EIN from the IRS</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
@@ -663,11 +664,8 @@ export default function HomePage() {
                         <span className="text-[#f88b00] mt-1">•</span>
                         <span>Prepare your complete banking packet</span>
                       </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-[#f88b00] mt-1">•</span>
-                        <span>Create your compliance checklist</span>
-                      </li>
                     </ul>
+                    <p className="text-xs text-gray-600 mt-3">Within 48 business hours</p>
                   </div>
                   <div className="mt-4 bg-orange-50 border border-orange-200 rounded-lg p-4">
                     <p className="text-sm text-gray-900">
@@ -686,10 +684,10 @@ export default function HomePage() {
                 </div>
                 <div className="flex-1 pt-2">
                   <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    Receive Your Complete Packet
+                    Receive your documents
                   </h3>
                   <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                    Within 48 hours, you'll receive your complete PLLC formation packet with everything you need to start your practice.
+                    We deliver your filing confirmation, EIN, and all documents digitally with clear next steps.
                   </p>
                   <div className="bg-gray-50 rounded-lg p-4 border border-gray-200">
                     <p className="text-sm font-semibold text-gray-900 mb-2">Your packet includes:</p>
@@ -704,7 +702,7 @@ export default function HomePage() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
-                        <span>Operating Agreement</span>
+                        <span>Signature-ready Operating Agreement</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
@@ -712,18 +710,9 @@ export default function HomePage() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-[#f88b00] mt-1">•</span>
-                        <span>Banking resolution and all documents needed to open your business bank account</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <span className="text-[#f88b00] mt-1">•</span>
-                        <span>Compliance checklist with step-by-step guide</span>
+                        <span>All documents banks actually ask for</span>
                       </li>
                     </ul>
-                  </div>
-                  <div className="mt-4 bg-green-50 border border-green-200 rounded-lg p-4">
-                    <p className="text-sm text-gray-900">
-                      <span className="font-semibold">Next Steps:</span> Open your business bank account, complete any board filings if required, and start seeing clients!
-                    </p>
                   </div>
                 </div>
               </div>
@@ -740,7 +729,7 @@ export default function HomePage() {
               Choose Your Profession
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We specialize in PLLC formation for licensed professionals. Select your profession to get started.
+              Select your profession to get started.
             </p>
           </div>
 
@@ -827,7 +816,7 @@ export default function HomePage() {
               {
                 title: 'Transparent Pricing',
                 description:
-                  '$749 all-inclusive. No hidden fees. No upsells. You know exactly what you\'re paying.',
+                  'Flat $749 all-inclusive. No hidden fees. No upsells.',
                 icon: (
                   <svg
                     className="w-8 h-8 text-white"
@@ -864,26 +853,23 @@ export default function HomePage() {
       <section className="bg-white py-16 sm:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-            Ready to Form Your PLLC?
+            Ready to form your Texas PLLC?
           </h2>
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-            Join hundreds of professionals who trust us with their PLLC formation. Get started today.
+            Start formation — $749 all-inclusive. Secure checkout. Humans available if you need help.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <CTALink
-              href="/therapist"
+              href="/checkout"
               className="bg-[#f88b00] text-white px-8 py-4 rounded-md text-lg font-medium hover:bg-[#d97706] transition-colors inline-block"
-              ctaText="Get Started"
+              ctaText="Start Formation"
               location="homepage-final-cta"
+              profession="Professional"
+              price={749}
+              trackAsCheckout={true}
             >
-              Get Started
+              Start Formation — $749
             </CTALink>
-            <Link
-              href="#pricing"
-              className="bg-white text-[#f88b00] border-2 border-[#f88b00] px-8 py-4 rounded-md text-lg font-medium hover:bg-orange-50 transition-colors inline-block"
-            >
-              View Pricing
-            </Link>
           </div>
         </div>
       </section>

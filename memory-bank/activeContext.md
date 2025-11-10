@@ -1,13 +1,30 @@
 # Active Context
 
 ## Current Work Focus
-**Conversion Optimization - Competitor Comparison Feature Complete**
+**Design System & Content Tone Alignment - Complete**
 
-Competitor comparison page implemented at `/compare` with detailed cost breakdowns, highlighting how competitors' "cheap" base prices become expensive when add-ons are included. Navigation updated with professions dropdown and comparison link. All profession pages enhanced with SEO content. Ready for spiffy.co integration and deployment.
+All pages updated to match New York PLLC site's conversational tone and layout structure. Homepage hero redesigned with two-column layout matching NY site pattern. All four profession pages (therapist, physician, engineer, attorney) restructured with NY-style layout: centered hero, "Built for [Profession]" section, "Everything you need" section, FAQ section, and final trust/CTA section. Spacing improved throughout (increased padding, gaps, margins) for better readability. Terminology standardized: "submit your filing" instead of "file your PLLC". Business information updated: Incaroo, 8911 N Capital of Texas Hwy, Suite 4200, Austin, TX 78759. Ready for spiffy.co integration and deployment.
 
 ## Recent Changes
 
-### Conversion Optimization (Latest)
+### Design System & Content Updates (Latest)
+- ✅ Updated homepage hero to match NY site layout (two-column with sidebar card)
+- ✅ Changed hero tone to be more conversational and less marketing-speak
+- ✅ Reduced superlative claims throughout homepage
+- ✅ Standardized terminology: "submit your filing" instead of "file your PLLC"
+- ✅ Updated business name and address: Incaroo, 8911 N Capital of Texas Hwy, Suite 4200, Austin, TX 78759
+- ✅ Restructured all four profession pages to match NY site layout pattern:
+  - Centered hero section with badges
+  - "Built for [Profession]" section with 4-card grid
+  - "Everything you need" section with 3-card grid
+  - Profession-specific FAQ section with 2-column grid
+  - Final trust/CTA section
+- ✅ Improved spacing throughout (p-8 cards, gap-8 grids, mb-16 headers, leading-relaxed text)
+- ✅ Updated copy tone to be more conversational and direct
+- ✅ Removed old component-based landing page structure
+- ✅ All pages now use direct JSX with consistent layout patterns
+
+### Conversion Optimization (Previous)
 - ✅ Created dedicated `/compare` page with competitor comparison component
 - ✅ Implemented cost savings highlight section showing true total costs
 - ✅ Added detailed cost breakdown (State Filing Fee, EIN, Operating Agreement, Registered Agent)
